@@ -1,0 +1,117 @@
+// ------ fonts ------
+@import url("http://fonts.cdnfonts.com/css/playfair-display");
+@import url("http://fonts.cdnfonts.com/css/raleway-5");
+
+$main-font-family: 'Playfair Display', sans-serif;
+$second-font-family: 'Raleway', sans-serif;
+
+
+// ----- @extend ----
+%title-font {
+    font-family: $main-font-family;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 48px;
+}
+
+%parag-font {
+    font-family: $second-font-family;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+%btn-font {
+    font-family: $second-font-family;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+%btn-green {
+    width: 200px;
+    height: 65px;
+    background-color: $green;
+    color: #fff;
+    border: none;
+    letter-spacing: 2.1px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #fff;
+        color: $green;
+    }
+
+    a {
+        @extend %aLink;
+    }
+}
+
+%btn-white {
+    width: 200px;
+    height: 65px;
+    background-color: #fff;
+    color: $green;
+    border: 3px solid $green;
+    letter-spacing: 2.1px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $green;
+        color: #fff;
+    }
+
+    a {
+        color: $green;
+        @extend %aLink;
+    }
+}
+
+%aLink{
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover{
+        color: $green;
+    }
+    &:active{
+    }
+}
+
+%box-shadow {
+    box-shadow: -5px 10px 20px 0px rgba($color: #000, $alpha: 0.1);
+}
+
+%my {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+%mx {
+    margin-left: 5%;
+}
+
+%pb {
+    padding-bottom: 10%;
+}
+
+%card {
+    width: 23%;
+    position: absolute;
+    top: 75%;
+    left: 1%;
+    padding: 2%;
+    background-color: #fff;
+}
+
+
+// ----- @mixin -----
+@mixin fonts($font-fam : $main-font-family, $font-wei : 900, $font-siz : 60px, $lin-hei : 71px) {
+    font-family: $font-fam;
+    font-weight: $font-wei;
+    font-size: $font-siz;
+    line-height: $lin-hei;
+}

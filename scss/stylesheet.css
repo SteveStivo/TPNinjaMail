@@ -1,0 +1,434 @@
+@import url("http://fonts.cdnfonts.com/css/playfair-display");
+@import url("http://fonts.cdnfonts.com/css/raleway-5");
+#section5 h2, #section4 h2, #section3 .card3 h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 48px;
+}
+
+#section4 .textOut, #section4 #dial .dialBox input, #section4 .cardscontent .contentsect4 p, #section1 .card h3, #contentMotion, #footerContent .footerULs, nav #navBarContent .navItems {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 26px;
+}
+
+#section6 .btn-4, #section4 #dial .dialBox #confirm, #section4 .cardscontent .contentsect4 h4, #section2 #video .imgBTN .btn-3, #section1 .btns .btn-2, #section1 .btns .btn-1, #footerContent .brandContent, nav #navBarContent .btn-0 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+#section4 #dial .dialBox #confirm, #section1 .btns .btn-1, nav #navBarContent .btn-0 {
+  width: 200px;
+  height: 65px;
+  background-color: #4BA87D;
+  color: #fff;
+  border: none;
+  letter-spacing: 2.1px;
+  transition: 0.3s;
+}
+#section4 #dial .dialBox #confirm:hover, #section1 .btns .btn-1:hover, nav #navBarContent .btn-0:hover {
+  background-color: #fff;
+  color: #4BA87D;
+}
+#section6 .btn-4, #section2 #video .imgBTN .btn-3, #section1 .btns .btn-2 {
+  width: 200px;
+  height: 65px;
+  background-color: #fff;
+  color: #4BA87D;
+  border: 3px solid #4BA87D;
+  letter-spacing: 2.1px;
+  transition: 0.3s;
+}
+#section6 .btn-4:hover, #section2 #video .imgBTN .btn-3:hover, #section1 .btns .btn-2:hover {
+  background-color: #4BA87D;
+  color: #fff;
+}
+#section6 .btn-4 a, #section2 #video .imgBTN .btn-3 a, #section1 .btns .btn-2 a {
+  color: #4BA87D;
+}
+
+#section3 .cards .card-link1:link, #footerContent .footerULs .footerULlink:link, #footerContent .brandContent .brandMailLink:link, nav #navBarContent .navItems .nav-link:link, nav #navBarContent .brandContent p .brandMailLink:link, #section4 #dial .dialBox #confirm a:link, #section1 .btns .btn-1 a:link, nav #navBarContent .btn-0 a:link, #section6 .btn-4 a:link, #section2 #video .imgBTN .btn-3 a:link, #section1 .btns .btn-2 a:link {
+  text-decoration: none;
+}
+#section3 .cards .card-link1:visited, #footerContent .footerULs .footerULlink:visited, #footerContent .brandContent .brandMailLink:visited, nav #navBarContent .navItems .nav-link:visited, nav #navBarContent .brandContent p .brandMailLink:visited, #section4 #dial .dialBox #confirm a:visited, #section1 .btns .btn-1 a:visited, nav #navBarContent .btn-0 a:visited, #section6 .btn-4 a:visited, #section2 #video .imgBTN .btn-3 a:visited, #section1 .btns .btn-2 a:visited {
+  text-decoration: none;
+}
+#section3 .cards .card-link1:hover, #footerContent .footerULs .footerULlink:hover, #footerContent .brandContent .brandMailLink:hover, nav #navBarContent .navItems .nav-link:hover, nav #navBarContent .brandContent p .brandMailLink:hover, #section4 #dial .dialBox #confirm a:hover, #section1 .btns .btn-1 a:hover, nav #navBarContent .btn-0 a:hover, #section6 .btn-4 a:hover, #section2 #video .imgBTN .btn-3 a:hover, #section1 .btns .btn-2 a:hover {
+  color: #4BA87D;
+}
+#section3 .cards img, #section1 .img-pc .imgPC {
+  box-shadow: -5px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#section1 .btns, #section1 .card h3, #section1 .card h2 {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+#section1, nav #navBarContent {
+  padding-bottom: 10%;
+}
+
+#section3 .cards .card2 .cardParag2, #section3 .cards .cardParag1 {
+  width: 23%;
+  position: absolute;
+  top: 75%;
+  left: 1%;
+  padding: 2%;
+  background-color: #fff;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+nav #navBarContent {
+  z-index: 5;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 0%;
+  width: 90%;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 71px;
+}
+nav #navBarContent .brandContent {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 0px;
+  position: relative;
+  width: 30%;
+}
+nav #navBarContent .brandContent .brandLogoA {
+  width: 77px;
+  height: 48px;
+  position: absolute;
+  bottom: -15px;
+}
+nav #navBarContent .brandContent p {
+  position: absolute;
+  left: 80px;
+  bottom: -30px;
+}
+nav #navBarContent .brandContent p .brandMailLink {
+  color: #000;
+}
+nav #navBarContent .navItems {
+  font-weight: 800;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-left: auto;
+  color: #000;
+}
+nav #navBarContent .navItems .nav-link {
+  color: #000;
+  display: inline-block;
+  position: relative;
+}
+nav #navBarContent .navItems .nav-link:hover {
+  color: #000;
+  font-weight: 400;
+}
+nav #navBarContent .navItems .nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+nav #navBarContent .navItems .nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background-color: #4BA87D;
+  transition: transform 0.25s ease-out;
+  height: 5px;
+  bottom: -6px;
+  left: 0;
+}
+nav #navBarContent .btn-0 {
+  font-size: 17px;
+  width: 168px;
+  height: 41px;
+}
+
+#footerContent {
+  padding: 5%;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+#footerContent .brandContent {
+  display: flex;
+}
+#footerContent .brandContent .brandLogoA {
+  width: 92px;
+  height: 46px;
+}
+#footerContent .brandContent .brandMailLink {
+  color: #000;
+}
+#footerContent .footerULs {
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+#footerContent .footerULs .footerULlink {
+  color: #000;
+}
+
+.conteneurDiviseur {
+  display: flex;
+  justify-content: center;
+}
+.conteneurDiviseur .diviseur {
+  width: 1088px;
+  height: 2px;
+  background: #DBDBDB;
+}
+
+#contentMotion {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 15px;
+}
+#contentMotion .motionRight {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#section1 {
+  display: flex;
+  height: 383px;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: 140px;
+}
+#section1 .card {
+  width: 45%;
+}
+#section1 .card h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 71px;
+}
+#section1 .btns {
+  display: flex;
+  justify-content: space-between;
+}
+#section1 .btns .btn-1 {
+  width: 45%;
+}
+#section1 .btns .btn-2 {
+  width: 45%;
+}
+#section1 .img-pc {
+  position: absolute;
+  z-index: -1;
+  padding-left: 38%;
+}
+#section2 {
+  height: 744px;
+  background-color: #F7F7F7;
+}
+#section2 #video {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#section2 #video .imgBTN {
+  display: flex;
+  flex-direction: column;
+}
+#section2 #video .imgBTN h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 71px;
+  color: #fff;
+  z-index: 1;
+  margin-top: 40%;
+}
+#section2 #video .imgBTN .btn-3 {
+  z-index: 2;
+  border: none;
+  margin: auto;
+}
+#section2 #video .road {
+  position: absolute;
+  margin-top: 10%;
+}
+
+#section3 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 26px;
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
+  display: flex;
+  position: relative;
+}
+#section3 .cards {
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+#section3 .cards .card1 {
+  display: flex;
+}
+#section3 .cards .card2 {
+  width: 45%;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 0px;
+}
+#section3 .cards .card2 .cardParag2 {
+  left: 32%;
+  width: 25%;
+}
+#section3 .cards .card-link1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  position: absolute;
+  top: 125%;
+  left: 3%;
+  color: #4BA87D;
+}
+#section3 .cards .card-link1:hover {
+  color: #000;
+}
+#section3 .cards .card-link2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  position: absolute;
+  top: 125%;
+  left: 34%;
+  color: #4BA87D;
+}
+#section3 .cards .card-link2:link {
+  text-decoration: none;
+}
+#section3 .cards .card-link2:visited {
+  text-decoration: none;
+}
+#section3 .card3 {
+  width: 35%;
+  margin: 0px;
+}
+#section4 {
+  width: 80%;
+  padding-top: 20%;
+  padding-bottom: 2%;
+  margin: auto;
+  color: #fff;
+}
+#section4 .cardscontent {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+#section4 .cardscontent .contentsect4 {
+  position: relative;
+}
+#section4 .cardscontent .contentsect4 h4 {
+  font-size: 34px;
+  z-index: 2;
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+}
+#section4 .cardscontent .contentsect4 p {
+  font-weight: 700;
+  z-index: 2;
+  position: absolute;
+  bottom: 0%;
+  left: 8%;
+}
+#section4 h2 {
+  width: 80%;
+  margin: auto;
+  padding-top: 2%;
+  text-align: center;
+  color: black;
+}
+#section4 #dial {
+  border: none;
+  padding: 3%;
+  width: 46%;
+}
+#section4 #dial .dialBox {
+  display: flex;
+  justify-content: space-between;
+}
+#section4 #dial .dialBox input {
+  box-sizing: border-box;
+  width: 420px;
+  height: 65px;
+}
+#section4 .textOut {
+  padding: 3%;
+  text-align: center;
+  color: #4BA87D;
+}
+
+#section5 {
+  width: 80%;
+  padding: 7%;
+  margin: auto;
+  text-align: center;
+}
+#section5 h2 {
+  padding: auto;
+  width: 40%;
+  height: 150px;
+  margin: auto;
+}
+#section5 .logos {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#section6 {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 6%;
+  background-color: #4BA87D;
+}
+#section6 h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 71px;
+  color: #fff;
+}/*# sourceMappingURL=stylesheet.css.map */

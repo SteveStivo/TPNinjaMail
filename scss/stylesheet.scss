@@ -1,0 +1,310 @@
+@import './variables';
+@import './fonts';
+@import './header';
+@import './footer';
+
+// --- section 1 hero ---
+#section1 {
+    display: flex;
+    height: 383px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    @extend %pb;
+    top: min(140px);
+
+    // card
+    .card {
+        width: 45%;
+
+        h2 {
+            @include fonts;
+            @extend %my;
+        }
+
+        h3 {
+            @extend %parag-font, %my;
+        }
+    }
+
+    // boutons -- section 1 --
+    .btns {
+        @extend %my;
+        display: flex;
+        justify-content: space-between;
+        
+        .btn-1 {
+            @extend %btn-font;
+            @extend %btn-green;
+            width: 45%;
+        }
+        
+        .btn-2 {
+            @extend %btn-font;
+            @extend %btn-white;
+            width: 45%;
+        }
+    }
+
+    // image -- section 1 --
+    .img-pc {
+        position: absolute;
+        z-index: -1;
+        padding-left: 38%;
+        
+        .imgPC {
+            @extend %box-shadow;
+        }
+    }
+}
+
+// --- section 2 video ---
+#section2 {
+    height: 744px;
+    background-color: $back-color-white;
+
+    #video {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        .imgBTN {
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+
+            h2 {
+                @include fonts;
+                color: #fff;
+                z-index: 1;
+                margin-top: 40%;
+            }
+
+            .btn-3 {
+                @extend %btn-font;
+                @extend %btn-white;
+                z-index: 2;
+                border: none;
+                margin: auto;
+            }
+        }
+
+        .road {
+            position: absolute;
+            margin-top: 10%;
+        }
+    }
+}
+
+// --- section 3 cards x2 ---
+#section3 {
+    @include fonts($main-font-family, 500, 19px, 26px);
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    position: relative;
+
+    // --- groupe cards x2 ----
+    .cards {
+        width: 70%;
+        display: flex;
+        margin: auto;
+
+        //  images x2
+        img {
+            @extend %box-shadow;
+        }
+
+        // flex card 1 (gauche)
+        .card1 {
+            display: flex;
+
+        }
+        .cardParag1 {
+            @extend %card;
+        }
+
+        // flex card 2 (milieu)
+        .card2 {
+            width: 45%;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 0px;
+
+
+            // paragraphe de flex card 2
+            .cardParag2 {
+                @extend %card;
+                left: 32%;
+                width: 25%;
+            }
+        }
+
+        // lien "learn more" des cards
+        .card-link1 {
+            @include fonts($second-font-family, 800, 16px, 19px);
+            position: absolute;
+            top: 125%;
+            left: 3%;
+            color: $green;
+            @extend %aLink;
+            &:hover{
+                color: $black;
+            }
+        }
+
+        .card-link2 {
+            @include fonts($second-font-family, 800, 16px, 19px);
+            position: absolute;
+            top: 125%;
+            left: 34%;
+            color: $green;
+
+            &:link {
+                text-decoration: none;
+            }
+
+            &:visited {
+                text-decoration: none;
+            }
+
+            //&:hover{
+            //}
+        }
+    }
+
+    // --- titre & paragraphe
+    .card3 {
+        width: 35%;
+        margin: 0px;
+
+        h2 {
+            @extend %title-font;
+        }
+    }
+
+}
+
+// --- section 4 cards x3 ---
+#section4 {
+    width: 80%;
+    padding-top: 20%;
+    padding-bottom: 2%;
+    margin: auto;
+    color: #fff;
+
+    // -- cards 1 + 2 + 3 --
+    .cardscontent {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+
+        .contentsect4 {
+            position: relative;
+
+            h4 {
+                @extend %btn-font;
+                font-size: 34px;
+                z-index: 2;
+                position: absolute;
+                bottom: 5%;
+                left: 8%;
+            }
+
+            p {
+                @extend %parag-font;
+                font-weight: 700;
+                z-index: 2;
+                position: absolute;
+                bottom: 0%;
+                left: 8%;
+            }
+        }
+    }
+
+    // -- title Section 4 --
+    h2 {
+        @extend %title-font;
+        width: 80%;
+        margin: auto;
+        padding-top: 2%;
+        text-align: center;
+        color: black;
+    }
+
+    // -- input mail Section 4 --
+    #dial {
+        border: none;
+        padding: 3%;
+        width: 46%;
+
+        .dialBox {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                box-sizing: border-box;
+                width: 420px;
+                height: 65px;
+                @extend %parag-font;
+            }
+
+            #confirm {
+                @extend %btn-green;
+                @extend %btn-font;
+            }
+        }
+    }
+
+    // texte de remerciement après clic
+    .textOut {
+        @extend %parag-font;
+        padding: 3%;
+        text-align: center;
+        color: $green;
+    }
+}
+
+// --- section 5 title et logos ---
+#section5 {
+    width: 80%;
+    padding: 7%;
+    margin: auto;
+    text-align: center;
+
+    h2 {
+        @extend %title-font;
+        padding: auto;
+        width: 40%;
+        height: 150px;
+        margin: auto;
+    }
+
+    .logos {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+    }
+}
+
+// --- section 6 fond vert
+#section6 {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 6%;
+    h2 {
+        @include fonts;
+        color: #fff;
+    }
+
+    background-color: $back-color-green;
+
+    .btn-4 {
+        @extend %btn-white;
+        @extend %btn-font;
+    }
+}

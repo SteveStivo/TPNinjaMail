@@ -1,0 +1,104 @@
+// ------ nav bar ------
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    #navBarContent{
+        z-index: 5;
+        background-color: $white;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: 0%;
+        width: 90%;
+        @include fonts;
+        @extend %pb;
+
+        // ***** media queries *****
+        @media screen (min-width: 992px) {
+            
+        }
+        
+        // ---- Brand Ninja header ----
+        .brandContent {
+            display: flex;
+            font-family: $second-font-family;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 0px;
+            position: relative;
+            width: 30%;
+            
+            // -- Logo et mail link --
+            .brandLogoA{
+                width: 77px;
+                height: 48px;
+                position: absolute;
+                bottom: -15px;
+            }
+            p{
+                position: absolute;
+                left: 80px;
+                bottom: -30px;
+                .brandMailLink{
+                    
+                    color: $black;
+                    @extend %aLink;
+                }
+            }
+            
+        }
+        
+        // --- nav links ---
+        .navItems {
+            @extend %parag-font;
+            font-weight: 800;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            margin-left: auto;
+            color: $black;
+            
+            .nav-link{
+                color: $black;
+                @extend %aLink;
+                display: inline-block;
+                position: relative;
+                
+                &:hover{
+                    color: $black;
+                    font-weight: 400;
+                }
+                &:hover:after{
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    transform-origin: bottom right;
+                    background-color: $green;
+                    transition: transform 0.25s ease-out;
+                    height: 5px;
+                    bottom: -6px;
+                    left: 0;
+                }
+            }
+        }
+        
+        .btn-0 {
+            @extend %btn-font;
+            font-size: 17px;
+            @extend %btn-green;
+            width: 168px;
+            height: 41px;
+        }
+        
+    }
+}
