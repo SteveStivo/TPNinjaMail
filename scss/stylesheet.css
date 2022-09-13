@@ -1,20 +1,20 @@
 @import url("http://fonts.cdnfonts.com/css/playfair-display");
 @import url("http://fonts.cdnfonts.com/css/raleway-5");
-#section5 h2, #section4 h2, #section3 .card3 h2 {
+#section5 h2, #section4 h2, #section3 .cardX1 h2 {
   font-family: "Playfair Display", sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 48px;
 }
 
-#section4 .textOut, #section4 #dial .dialBox input, #section4 .cardscontent .contentsect4 p, #section1 .card h3, #contentMotion, #footerContent .footerULs, nav #navBarContent .navItems {
+#section4 .textOut, #section4 #dial .dialBox input, #section4 .card3imgcontent p, #section3 .cardX1 .cardX1arag, #section1 .card h3, #contentMotion, #footerContent .footerULs, nav #navBarContent .navItems {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 19px;
-  line-height: 26px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
-#section6 .btn-4, #section4 #dial .dialBox #confirm, #section4 .cardscontent .contentsect4 h4, #section2 #video .imgBTN .btn-3, #section1 .btns .btn-2, #section1 .btns .btn-1, #footerContent .brandContent, nav #navBarContent .btn-0 {
+#section6 .btn-4, #section4 #dial .dialBox #confirm, #section4 .card3imgcontent h4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-2, #section1 .btns .btn-1, #footerContent .brandContent, nav #navBarContent .btn-0 {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 21px;
@@ -33,8 +33,9 @@
 #section4 #dial .dialBox #confirm:hover, #section1 .btns .btn-1:hover, nav #navBarContent .btn-0:hover {
   background-color: #fff;
   color: #4BA87D;
+  border: #4BA87D solid 1px;
 }
-#section6 .btn-4, #section2 #video .imgBTN .btn-3, #section1 .btns .btn-2 {
+#section6 .btn-4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-2 {
   width: 200px;
   height: 65px;
   background-color: #fff;
@@ -43,64 +44,77 @@
   letter-spacing: 2.1px;
   transition: 0.3s;
 }
-#section6 .btn-4:hover, #section2 #video .imgBTN .btn-3:hover, #section1 .btns .btn-2:hover {
+#section6 .btn-4:hover, #section2 #hero2 .imgBTN .btn-3:hover, #section1 .btns .btn-2:hover {
   background-color: #4BA87D;
   color: #fff;
+  border: #fff solid 1px;
 }
-#section6 .btn-4 a, #section2 #video .imgBTN .btn-3 a, #section1 .btns .btn-2 a {
+#section6 .btn-4 a, #section2 #hero2 .imgBTN .btn-3 a, #section1 .btns .btn-2 a {
   color: #4BA87D;
 }
 
-#section3 .cards .card-link1:link, #footerContent .footerULs .footerULlink:link, #footerContent .brandContent .brandMailLink:link, nav #navBarContent .navItems .nav-link:link, nav #navBarContent .brandContent p .brandMailLink:link, #section4 #dial .dialBox #confirm a:link, #section1 .btns .btn-1 a:link, nav #navBarContent .btn-0 a:link, #section6 .btn-4 a:link, #section2 #video .imgBTN .btn-3 a:link, #section1 .btns .btn-2 a:link {
+#section3 .cardsX2 .card-link:link, #footerContent .footerULs .footerULlink:link, #footerContent .brandContent .brandMailLink:link, nav #navBarContent .navItems .nav-link:link, nav #navBarContent .brandContent p .brandMailLink:link, #section4 #dial .dialBox #confirm a:link, #section1 .btns .btn-1 a:link, nav #navBarContent .btn-0 a:link, #section6 .btn-4 a:link, #section2 #hero2 .imgBTN .btn-3 a:link, #section1 .btns .btn-2 a:link {
   text-decoration: none;
 }
-#section3 .cards .card-link1:visited, #footerContent .footerULs .footerULlink:visited, #footerContent .brandContent .brandMailLink:visited, nav #navBarContent .navItems .nav-link:visited, nav #navBarContent .brandContent p .brandMailLink:visited, #section4 #dial .dialBox #confirm a:visited, #section1 .btns .btn-1 a:visited, nav #navBarContent .btn-0 a:visited, #section6 .btn-4 a:visited, #section2 #video .imgBTN .btn-3 a:visited, #section1 .btns .btn-2 a:visited {
+#section3 .cardsX2 .card-link:visited, #footerContent .footerULs .footerULlink:visited, #footerContent .brandContent .brandMailLink:visited, nav #navBarContent .navItems .nav-link:visited, nav #navBarContent .brandContent p .brandMailLink:visited, #section4 #dial .dialBox #confirm a:visited, #section1 .btns .btn-1 a:visited, nav #navBarContent .btn-0 a:visited, #section6 .btn-4 a:visited, #section2 #hero2 .imgBTN .btn-3 a:visited, #section1 .btns .btn-2 a:visited {
   text-decoration: none;
 }
-#section3 .cards .card-link1:hover, #footerContent .footerULs .footerULlink:hover, #footerContent .brandContent .brandMailLink:hover, nav #navBarContent .navItems .nav-link:hover, nav #navBarContent .brandContent p .brandMailLink:hover, #section4 #dial .dialBox #confirm a:hover, #section1 .btns .btn-1 a:hover, nav #navBarContent .btn-0 a:hover, #section6 .btn-4 a:hover, #section2 #video .imgBTN .btn-3 a:hover, #section1 .btns .btn-2 a:hover {
+#section3 .cardsX2 .card-link:hover, #footerContent .footerULs .footerULlink:hover, #footerContent .brandContent .brandMailLink:hover, nav #navBarContent .navItems .nav-link:hover, nav #navBarContent .brandContent p .brandMailLink:hover, #section4 #dial .dialBox #confirm a:hover, #section1 .btns .btn-1 a:hover, nav #navBarContent .btn-0 a:hover, #section6 .btn-4 a:hover, #section2 #hero2 .imgBTN .btn-3 a:hover, #section1 .btns .btn-2 a:hover {
   color: #4BA87D;
 }
-#section3 .cards img, #section1 .img-pc .imgPC {
-  box-shadow: -5px 10px 20px 0px rgba(0, 0, 0, 0.1);
-}
 
-#section1 .btns, #section1 .card h3, #section1 .card h2 {
+#section4 .card3imgcontent p, #section4 .card3imgcontent h4, #section1 .btns, #section1 .card h3, #section1 .card h2 {
   margin-top: 4%;
   margin-bottom: 4%;
+}
+
+#section4 .card3imgcontent p, #section4 .card3imgcontent h4 {
+  margin-left: 10%;
 }
 
 #section1, nav #navBarContent {
   padding-bottom: 10%;
 }
 
-#section3 .cards .card2 .cardParag2, #section3 .cards .cardParag1 {
-  width: 23%;
-  position: absolute;
-  top: 75%;
-  left: 1%;
-  padding: 2%;
+#section3 .cardsX2 .cardParag {
+  width: 58%;
+  top: 84%;
+  transform: translate(1%, 0%);
+  padding: 5%;
   background-color: #fff;
 }
 
+#section3 .cardsX2 .card-link {
+  transform: translate(0%, 100%);
+  top: 150%;
+  left: 5%;
+  color: #4BA87D;
+}
+#section3 .cardsX2 .card-link:hover {
+  color: #000;
+}
+
 nav {
+  position: fixed;
+  z-index: 5;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: auto;
+  background-color: #fff;
 }
 nav #navBarContent {
-  z-index: 5;
-  background-color: #fff;
-  position: fixed;
   display: flex;
   align-items: center;
   margin: auto;
-  padding: 0%;
+  padding: 1%;
   width: 90%;
   font-family: "Playfair Display", sans-serif;
   font-weight: 900;
   font-size: 60px;
   line-height: 71px;
+}
+@media screen and (max-width: 576px) {
+  nav #navBarContent {
+    justify-content: space-between;
+  }
 }
 nav #navBarContent .brandContent {
   display: flex;
@@ -110,6 +124,13 @@ nav #navBarContent .brandContent {
   line-height: 0px;
   position: relative;
   width: 30%;
+}
+@media screen and (max-width: 576px) {
+  nav #navBarContent .brandContent {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 20px;
+  }
 }
 nav #navBarContent .brandContent .brandLogoA {
   width: 77px;
@@ -133,6 +154,13 @@ nav #navBarContent .navItems {
   width: 40%;
   margin-left: auto;
   color: #000;
+}
+@media screen and (max-width: 576px) {
+  nav #navBarContent .navItems {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 nav #navBarContent .navItems .nav-link {
   color: #000;
@@ -159,10 +187,54 @@ nav #navBarContent .navItems .nav-link:after {
   bottom: -6px;
   left: 0;
 }
+nav #navBarContent .miniNav {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  nav #navBarContent .miniNav {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    margin-left: 0;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 800;
+    list-style: none;
+  }
+}
 nav #navBarContent .btn-0 {
   font-size: 17px;
   width: 168px;
   height: 41px;
+}
+@media screen and (max-width: 576px) {
+  nav #navBarContent .btn-0 {
+    font-size: 11px;
+    width: 115px;
+    height: 25px;
+  }
+}
+nav #navBarContent .navButton {
+  background-color: transparent;
+  border: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 32px;
+  float: right;
+  line-height: 70px;
+  display: none;
+}
+nav #navBarContent .navButton:focus {
+  outline: none;
+}
+@media screen and (max-width: 576px) {
+  nav #navBarContent .navButton {
+    display: block;
+  }
 }
 
 #footerContent {
@@ -171,6 +243,12 @@ nav #navBarContent .btn-0 {
   width: 80%;
   margin: auto;
   justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  #footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #footerContent .brandContent {
   display: flex;
@@ -188,6 +266,22 @@ nav #navBarContent .btn-0 {
   display: flex;
   width: 60%;
   justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  #footerContent .footerULs {
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #footerContent .footerULs .alignUL {
+    text-align: center;
+    padding-bottom: 15%;
+  }
+}
+#footerContent .footerULs .alignUL li {
+  padding-bottom: 10%;
 }
 #footerContent .footerULs .footerULlink {
   color: #000;
@@ -210,76 +304,181 @@ nav #navBarContent .btn-0 {
   justify-content: space-between;
   font-size: 15px;
 }
+@media screen and (max-width: 576px) {
+  #contentMotion {
+    flex-direction: column;
+    font-size: 9px;
+    font-weight: 700;
+    align-items: center;
+  }
+}
 #contentMotion .motionRight {
   width: 35%;
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 576px) {
+  #contentMotion .motionRight {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+body {
+  margin: 0;
+}
 
 #section1 {
   display: flex;
-  height: 383px;
   width: 80%;
   margin: auto;
-  position: relative;
-  top: 140px;
+  padding-top: 90px;
+}
+#section1 .hero {
+  z-index: 1;
+  background-image: url(../assets/femme_pc.png);
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+@media screen and (min-width: 992px) {
+  #section1 .hero {
+    height: 383px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section1 .hero {
+    height: 212px;
+  }
 }
 #section1 .card {
-  width: 45%;
+  width: 55%;
+}
+@media screen and (max-width: 576px) {
+  #section1 .card {
+    width: 75%;
+    justify-content: center;
+    margin: auto;
+  }
 }
 #section1 .card h2 {
   font-family: "Playfair Display", sans-serif;
   font-weight: 900;
-  font-size: 60px;
-  line-height: 71px;
+  font-size: 38px;
+  line-height: 46px;
+}
+@media screen and (max-width: 576px) {
+  #section1 .card h2 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #section1 .card h2 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 71px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section1 .card h3 {
+    font-size: 10px;
+    line-height: 16px;
+    width: 85%;
+  }
 }
 #section1 .btns {
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
 #section1 .btns .btn-1 {
   width: 45%;
 }
+@media screen and (max-width: 576px) {
+  #section1 .btns .btn-1 {
+    font-size: 10px;
+    line-height: 15px;
+    height: 30px;
+  }
+}
 #section1 .btns .btn-2 {
   width: 45%;
 }
-#section1 .img-pc {
-  position: absolute;
-  z-index: -1;
-  padding-left: 38%;
+@media screen and (max-width: 576px) {
+  #section1 .btns .btn-2 {
+    font-size: 10px;
+    line-height: 15px;
+    height: 30px;
+  }
 }
+
 #section2 {
-  height: 744px;
   background-color: #F7F7F7;
 }
-#section2 #video {
-  position: relative;
-  width: 80%;
+#section2 #hero2 {
+  background-image: url(../assets/rue_video.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 530px;
   margin: auto;
+  padding: 5%;
   display: flex;
   justify-content: center;
 }
-#section2 #video .imgBTN {
+@media screen and (max-width: 576px) {
+  #section2 #hero2 {
+    height: 150px;
+  }
+}
+#section2 #hero2 .imgBTN {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-#section2 #video .imgBTN h2 {
+#section2 #hero2 .imgBTN h2 {
   font-family: "Playfair Display", sans-serif;
   font-weight: 900;
-  font-size: 60px;
-  line-height: 71px;
+  font-size: 38px;
+  line-height: 46px;
   color: #fff;
   z-index: 1;
-  margin-top: 40%;
+  margin-top: auto;
 }
-#section2 #video .imgBTN .btn-3 {
+@media screen and (max-width: 576px) {
+  #section2 #hero2 .imgBTN h2 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 900;
+    font-size: 33px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #section2 #hero2 .imgBTN h2 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 71px;
+  }
+}
+#section2 #hero2 .imgBTN .btn-3 {
   z-index: 2;
   border: none;
-  margin: auto;
+  margin-bottom: auto;
 }
-#section2 #video .road {
-  position: absolute;
-  margin-top: 10%;
+@media screen and (max-width: 576px) {
+  #section2 #hero2 .imgBTN .btn-3 {
+    font-size: 6px;
+    line-height: 7px;
+    width: 80px;
+    height: 25px;
+  }
 }
 
 #section3 {
@@ -291,87 +490,186 @@ nav #navBarContent .btn-0 {
   margin: auto;
   margin-top: 2%;
   display: flex;
-  position: relative;
 }
-#section3 .cards {
-  width: 70%;
+@media screen and (max-width: 576px) {
+  #section3 {
+    flex-direction: column;
+    height: 690px;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+#section3 .cardsX2 {
+  width: 65%;
   display: flex;
   margin: auto;
+  justify-content: space-between;
 }
-#section3 .cards .card1 {
-  display: flex;
+@media screen and (max-width: 576px) {
+  #section3 .cardsX2 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 }
-#section3 .cards .card2 {
-  width: 45%;
-  justify-content: space-around;
-  margin: auto;
-  margin-top: 0px;
+#section3 .cardsX2 .cardsSect3 {
+  background-repeat: no-repeat;
+  height: 275px;
 }
-#section3 .cards .card2 .cardParag2 {
-  left: 32%;
-  width: 25%;
+@media screen and (min-width: 992px) {
+  #section3 .cardsX2 .cardsSect3 {
+    width: 50%;
+  }
 }
-#section3 .cards .card-link1 {
+@media screen and (max-width: 576px) {
+  #section3 .cardsX2 .cardsSect3 {
+    width: 70%;
+  }
+}
+#section3 .cardsX2 .card1sect3 {
+  background-image: url(../assets/femme-asiatique.png);
+}
+@media screen and (min-width: 992px) {
+  #section3 .cardsX2 .card1sect3 {
+    position: relative;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section3 .cardsX2 .card1sect3 {
+    margin-top: 15%;
+  }
+}
+#section3 .cardsX2 .card2sect3 {
+  background-image: url(../assets/reunion.png);
+}
+@media screen and (min-width: 992px) {
+  #section3 .cardsX2 .card2sect3 {
+    position: relative;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section3 .cardsX2 .card2sect3 {
+    margin-top: 33%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section3 .cardsX2 .cardParag {
+    margin-top: 80%;
+    width: 84%;
+    padding: 7%;
+  }
+}
+#section3 .cardsX2 .card-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
-  position: absolute;
-  top: 125%;
-  left: 3%;
-  color: #4BA87D;
 }
-#section3 .cards .card-link1:hover {
-  color: #000;
+@media screen and (min-width: 992px) {
+  #section3 .cardsX2 .card-link {
+    position: absolute;
+  }
 }
-#section3 .cards .card-link2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
-  position: absolute;
-  top: 125%;
-  left: 34%;
-  color: #4BA87D;
-}
-#section3 .cards .card-link2:link {
-  text-decoration: none;
-}
-#section3 .cards .card-link2:visited {
-  text-decoration: none;
-}
-#section3 .card3 {
+#section3 .cardX1 {
   width: 35%;
   margin: 0px;
 }
+@media screen and (max-width: 576px) {
+  #section3 .cardX1 {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section3 .cardX1 .cardX1arag {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section3 .cardX1 h2 {
+    padding-top: 25%;
+    font-size: 28px;
+    line-height: 31px;
+  }
+}
+
 #section4 {
   width: 80%;
-  padding-top: 20%;
+  padding-top: 15%;
   padding-bottom: 2%;
   margin: auto;
   color: #fff;
 }
-#section4 .cardscontent {
+@media screen and (max-width: 576px) {
+  #section4 {
+    padding-top: 70%;
+  }
+}
+#section4 .card3imgcontent {
   display: flex;
-  justify-content: space-around;
-  position: relative;
+  justify-content: space-between;
+  padding-top: 5%;
 }
-#section4 .cardscontent .contentsect4 {
-  position: relative;
+@media screen and (max-width: 576px) {
+  #section4 .card3imgcontent {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 }
-#section4 .cardscontent .contentsect4 h4 {
+#section4 .card3imgcontent .cardsSect4 {
+  display: flex;
+  flex-direction: column;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  justify-content: end;
+  width: 27%;
+  height: 240px;
+}
+#section4 .card3imgcontent .card1sect4 {
+  background-image: url(../assets/restaurateur.png);
+}
+@media screen and (max-width: 576px) {
+  #section4 .card3imgcontent .card1sect4 {
+    width: 70%;
+    padding-bottom: 5%;
+  }
+}
+#section4 .card3imgcontent .card2sect4 {
+  background-image: url(../assets/femme-restau.png);
+}
+@media screen and (max-width: 576px) {
+  #section4 .card3imgcontent .card2sect4 {
+    width: 70%;
+    padding-bottom: 5%;
+  }
+}
+#section4 .card3imgcontent .card3sect4 {
+  background-image: url(../assets/femme-comptoir.png);
+}
+@media screen and (max-width: 576px) {
+  #section4 .card3imgcontent .card3sect4 {
+    width: 70%;
+    padding-bottom: 5%;
+  }
+}
+#section4 .card3imgcontent h4 {
+  transform: translate(0%, 50%);
   font-size: 34px;
   z-index: 2;
-  position: absolute;
-  bottom: 5%;
-  left: 8%;
 }
-#section4 .cardscontent .contentsect4 p {
+@media screen and (max-width: 576px) {
+  #section4 .card3imgcontent h4 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+#section4 .card3imgcontent p {
   font-weight: 700;
   z-index: 2;
-  position: absolute;
-  bottom: 0%;
-  left: 8%;
 }
 #section4 h2 {
   width: 80%;
@@ -380,19 +678,50 @@ nav #navBarContent .btn-0 {
   text-align: center;
   color: black;
 }
+@media screen and (max-width: 576px) {
+  #section4 h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
 #section4 #dial {
   border: none;
   padding: 3%;
   width: 46%;
 }
+@media screen and (max-width: 576px) {
+  #section4 #dial {
+    width: 70%;
+  }
+}
 #section4 #dial .dialBox {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  #section4 #dial .dialBox {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #section4 #dial .dialBox input {
   box-sizing: border-box;
   width: 420px;
   height: 65px;
+}
+@media screen and (max-width: 576px) {
+  #section4 #dial .dialBox input {
+    margin-bottom: 5%;
+    height: 43px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section4 #dial .dialBox #confirm {
+    width: 144px;
+    height: 42px;
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
 #section4 .textOut {
   padding: 3%;
@@ -412,11 +741,30 @@ nav #navBarContent .btn-0 {
   height: 150px;
   margin: auto;
 }
+@media screen and (max-width: 576px) {
+  #section5 h2 {
+    padding-top: 35%;
+    width: 100%;
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
 #section5 .logos {
   display: flex;
   width: 90%;
   margin: auto;
   justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  #section5 .logos {
+    flex-direction: column;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section5 .logos .logo {
+    padding-bottom: 20%;
+  }
 }
 
 #section6 {
@@ -431,4 +779,18 @@ nav #navBarContent .btn-0 {
   font-size: 60px;
   line-height: 71px;
   color: #fff;
+}
+@media screen and (max-width: 576px) {
+  #section6 h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #section6 .btn-4 {
+    font-size: 13px;
+    line-height: 15px;
+    width: 135px;
+    height: 42px;
+  }
 }/*# sourceMappingURL=stylesheet.css.map */

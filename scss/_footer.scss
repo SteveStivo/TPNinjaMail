@@ -1,48 +1,68 @@
 // --- footer UL et LI---
-#footerContent{
+#footerContent {
     padding: 5%;
     display: flex;
+    @media screen and (max-width:576px) {
+        flex-direction: column;
+        align-items: center;
+    }
     width: 80%;
     margin: auto;
     justify-content: space-between;
 
     // -- Brand Ninja footer
-    .brandContent{
+    .brandContent {
         display: flex;
         @extend %btn-font;
 
         // - Logo et mail link -
-        .brandLogoA{
+        .brandLogoA {
             width: 92px;
             height: 46px;
         }
-        .brandMailLink{
-            color: $black;
+
+        .brandMailLink {
+            color: $color2-dark;
             @extend %aLink;
         }
     }
 
     // -- ULs content footer
-    .footerULs{
+    .footerULs {
         @extend %parag-font;
         font-weight: 700;
         list-style: none;
         display: flex;
+        @media screen and (max-width:576px) {
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+        }
         width: 60%;
         justify-content: space-between;
+        .alignUL{
+            @media screen and (max-width:576px) {
+                text-align: center;
+                padding-bottom: 15%;
+            }
+            li{
+                padding-bottom: 10%;
+            }
+        }
 
-        .footerULlink{
-            color: $black;
+        .footerULlink {
+            color: $color2-dark;
             @extend %aLink;
         }
     }
 }
 
 // -- ligne de séparation --
-.conteneurDiviseur{
+.conteneurDiviseur {
     display: flex;
     justify-content: center;
-    .diviseur{
+
+    .diviseur {
         width: 1088px;
         height: 2px;
         background: $barre-color;
@@ -50,17 +70,27 @@
 }
 
 // -- mentions légales --
-#contentMotion{
+#contentMotion {
     width: 80%;
     display: flex;
+    @media screen and (max-width:576px) {
+        flex-direction: column;
+        font-size: 9px;
+        font-weight: 700;
+        align-items: center;
+    }
     margin: auto;
     justify-content: space-between;
     @extend %parag-font;
     font-size: 15px;
 
-    .motionRight{
+    .motionRight {
         width: 35%;
         display: flex;
+        @media screen and (max-width:576px) {
+            flex-direction: column;
+            text-align: center;
+        }
         justify-content: space-around;
     }
 }

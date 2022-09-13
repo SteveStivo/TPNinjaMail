@@ -17,8 +17,9 @@ $second-font-family: 'Raleway', sans-serif;
 %parag-font {
     font-family: $second-font-family;
     font-weight: 500;
-    font-size: 19px;
-    line-height: 26px;
+    font-size: 12px;
+    line-height: 16px;
+
 }
 
 %btn-font {
@@ -26,20 +27,43 @@ $second-font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 21px;
     line-height: 26px;
+
 }
+
 
 %btn-green {
     width: 200px;
     height: 65px;
-    background-color: $green;
-    color: #fff;
+    background-color: $color1-main;
+    color: $color2-light;
     border: none;
     letter-spacing: 2.1px;
     transition: 0.3s;
 
     &:hover {
         background-color: #fff;
-        color: $green;
+        color: $color1-main;
+        border: $color1-main solid 1px;
+    }
+
+    a {
+        @extend %aLink;
+    }
+}
+
+%btn-green992 {
+    width: 131px;
+    height: 42px;
+    background-color: $color1-main;
+    color: $color2-light;
+    border: none;
+    letter-spacing: 2.1px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #fff;
+        color: $color1-main;
+        border: $color1-main solid 1px;
     }
 
     a {
@@ -50,35 +74,39 @@ $second-font-family: 'Raleway', sans-serif;
 %btn-white {
     width: 200px;
     height: 65px;
-    background-color: #fff;
-    color: $green;
-    border: 3px solid $green;
+    background-color: $color2-light;
+    color: $color1-main;
+    border: 3px solid $color1-main;
     letter-spacing: 2.1px;
     transition: 0.3s;
 
     &:hover {
-        background-color: $green;
-        color: #fff;
+        background-color: $color1-main;
+        color: $color2-light;
+        border: $color2-light solid 1px;
     }
 
     a {
-        color: $green;
+        color: $color1-main;
         @extend %aLink;
     }
 }
 
-%aLink{
+%aLink {
     &:link {
         text-decoration: none;
     }
+
     &:visited {
         text-decoration: none;
     }
-    &:hover{
-        color: $green;
+
+    &:hover {
+        color: $color1-main;
     }
-    &:active{
-    }
+
+    //&:active{
+    //}
 }
 
 %box-shadow {
@@ -91,22 +119,31 @@ $second-font-family: 'Raleway', sans-serif;
 }
 
 %mx {
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 %pb {
     padding-bottom: 10%;
 }
 
-%card {
-    width: 23%;
-    position: absolute;
-    top: 75%;
-    left: 1%;
-    padding: 2%;
-    background-color: #fff;
+%cardParag {
+    width: 58%;
+    top: 84%;
+    transform: translate(1%, 0%);
+    padding: 5%;
+    background-color: $color2-light;
 }
 
+%card-link {
+    transform: translate(0%, 100%);
+    top: 150%;
+    left: 5%;
+    color: $color1-main;
+
+    &:hover {
+        color: $color2-dark;
+    }
+}
 
 // ----- @mixin -----
 @mixin fonts($font-fam : $main-font-family, $font-wei : 900, $font-siz : 60px, $lin-hei : 71px) {

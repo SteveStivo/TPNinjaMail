@@ -1,27 +1,24 @@
 // ------ nav bar ------
-nav{
+nav {
+    position: fixed;
+    z-index: 5;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    background-color: $color2-light;
 
-    #navBarContent{
-        z-index: 5;
-        background-color: $white;
-        position: fixed;
+    #navBarContent {
+
         display: flex;
         align-items: center;
         margin: auto;
-        padding: 0%;
+        padding: 1%;
         width: 90%;
         @include fonts;
         @extend %pb;
+        @media screen and (max-width: 576px) {
+            justify-content: space-between;
 
-        // ***** media queries *****
-        @media screen (min-width: 992px) {
-            
         }
-        
+
         // ---- Brand Ninja header ----
         .brandContent {
             display: flex;
@@ -31,27 +28,35 @@ nav{
             line-height: 0px;
             position: relative;
             width: 30%;
-            
+            @media screen and (max-width: 576px) {
+                font-weight: 900;
+                font-size: 22px;
+                line-height: 20px;
+            }
+
             // -- Logo et mail link --
-            .brandLogoA{
+            .brandLogoA {
                 width: 77px;
                 height: 48px;
                 position: absolute;
                 bottom: -15px;
+
             }
-            p{
+
+            p {
                 position: absolute;
                 left: 80px;
                 bottom: -30px;
-                .brandMailLink{
-                    
-                    color: $black;
+
+                .brandMailLink {
+
+                    color: $color2-dark;
                     @extend %aLink;
                 }
             }
-            
+
         }
-        
+
         // --- nav links ---
         .navItems {
             @extend %parag-font;
@@ -61,29 +66,38 @@ nav{
             justify-content: space-around;
             width: 40%;
             margin-left: auto;
-            color: $black;
-            
-            .nav-link{
-                color: $black;
+            color: $color2-dark;
+
+            @media screen and (max-width: 576px) {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+
+
+            .nav-link {
+                color: $color2-dark;
                 @extend %aLink;
                 display: inline-block;
                 position: relative;
-                
-                &:hover{
-                    color: $black;
+
+                &:hover {
+                    color: $color2-dark;
                     font-weight: 400;
                 }
-                &:hover:after{
+
+                &:hover:after {
                     transform: scaleX(1);
                     transform-origin: bottom left;
                 }
-                &:after{
+
+                &:after {
                     content: '';
                     position: absolute;
                     width: 100%;
                     transform: scaleX(0);
                     transform-origin: bottom right;
-                    background-color: $green;
+                    background-color: $color1-main;
                     transition: transform 0.25s ease-out;
                     height: 5px;
                     bottom: -6px;
@@ -91,14 +105,53 @@ nav{
                 }
             }
         }
-        
+        .miniNav{
+            display: none;
+            @media screen and (max-width: 576px) {
+                display: flex;
+                flex-direction: column;
+                width: 10%;
+                margin-left: 0;
+                color: $color2-dark;
+                font-family: $second-font-family;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 800;
+                list-style: none;
+            }
+        }
+
         .btn-0 {
             @extend %btn-font;
             font-size: 17px;
             @extend %btn-green;
             width: 168px;
             height: 41px;
+            @media screen and (max-width: 576px){
+                font-size: 11px;
+                width: 115px;
+                height: 25px;
+            }
         }
-        
+        // --- hamburger ---
+        .navButton{
+            background-color: transparent;
+            border: 10px;
+            color: black;
+            cursor: pointer;
+            font-size: 30px;
+            margin-left: 32px;
+            float: right;
+            line-height: 70px;
+            display: none;
+            &:focus{
+                outline: none;
+            }
+
+            @media screen and (max-width: 576px) {
+                display: block;
+            }
+        }
     }
 }
