@@ -1,127 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./scss/stylesheet.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
     <title>Ninja Mail</title>
 </head>
+
 <body>
+    <header>
+        <!-- nav bar -->
+        <nav>
+            <div id="navBarContent">
 
-    <!-- nav bar -->
-    <nav>
-        <div id="navBarContent">
+                <!-- logo & Ninja mail -->
+                <div class="brandContent">
+                    <a class="brandLogoA" href="#"><img class="navLogo" src="./assets/mail_icone.png"
+                            alt="mail icone"></a>
+                    <p><a class="brandMailLink" href="#">NinjaMail</a></p>
+                </div>
 
-            <!-- logo & Ninja mail -->
-            <div class="brandContent">
-                <a class="brandLogoA" href="#"><img class="navLogo" src="./assets/mail_icone.png" alt="mail icone"></a>
-                <p><a class="brandMailLink" href="#">NinjaMail</a></p>
+                <!-- nav links -->
+                <ul class="navItems">
+                    <li class="navItem">
+                        <a class="nav-link" aria-current="page" href="#">FEATURES</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="nav-link" href="#">PRICING</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="nav-link" href="#">PARTNERS</a>
+                    </li>
+                </ul>
+
+                <!-- login sign button -->
+                <button class="btn-0" onclick="clicBTN0()">SIGN UP FREE</button>
+
+                <!-- mini Nav bar button-->
+                <button class="navButton" id="navButton">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+
             </div>
-
-            <!-- nav links -->
-            <ul class="navItems">
-                <li class="navItem">
-                    <a class="nav-link" aria-current="page" href="#">FEATURES</a>
-                </li>
-                <li class="navItem">
-                    <a class="nav-link" href="#">PRICING</a>
-                </li>
-                <li class="navItem">
-                    <a class="nav-link" href="#">SERVICES</a>
-                </li>
-                <li class="navItem">
-                    <a class="nav-link" href="#">PARTNERS</a>
-                </li>
-            </ul>
-            <button class="btn-0" onclick="clicBTN0()">SIGN UP FREE</button>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- section 1 hero  -->
     <section id="section1">
 
-        <!-- card -->
-        <div class="card">
-            <h2 class="">Create Stunning<br>Email Campaigns</h2>
-            <h3 class="">Create and launch email campaigns that captivate your customers in just a few clicks.</h3>
-            
-            <div class="btns">
-                <button class="btn-1" onclick="clicBTN1()">TRY NOW</button>
-                <button class="btn-2" onclick="clicBTN2()">GET A DEMO</button>
+        <!-- hero fille PC en background-->
+        <div class="hero">
+            <!-- card -->
+            <div class="card">
+                <h2>Create Stunning<br>Email Campaigns</h2>
+                <h3>Create and launch email campaigns that captivate your customers in just a few clicks.</h3>
+                <div class="btns">
+                    <button class="btn-1" onclick="clicBTN1()">TRY NOW</button>
+                    <button class="btn-2" onclick="clicBTN2()">GET A DEMO</button>
+                </div>
             </div>
-        </div>
-
-        <!-- image fille et PC -->
-        <div class="img-pc">
-            <img class="imgPC" src="./assets/femme_pc.png" alt="femme sur pc">
         </div>
     </section>
 
-    <!-- section 2 video  -->
+    <!-- section 2 hero2  -->
     <section id="section2">
-        <div id="video">
+        <div id="hero2">
             <div class="imgBTN">
                 <h2>Reach More Customers</h2>
                 <button class="btn-3" onclick="clicBTN3()">LEARN HOW</button>
             </div>
-            <img class="road" src="./assets/rue_video.png" alt="rue passante">
         </div>
     </section>
 
-    <!-- section 3 cards x2 + titre & paragraphe -->
+    <!-- section 3 cardsX2img x2 + titre & paragraphe -->
     <section id="section3">
-        <div class="cards">
-            <div class="card1">
-                <img src="./assets/femme-asiatique.png" alt="">
-                <p class="cardParag1">Launch campaigns but also find new customers. Our unique platform handles campaigns from start to end.</p>
-                <a class="card-link1" href="#">Learn More ></a>
+        <div class="cardsX2">
+            <div class="card1sect3 cardsSect3">
+                <p class="cardParag">Launch campaigns but also find new customers. Our unique platform handles
+                    campaigns from start to end.</p>
+                <a class="card-link" href="#">Learn More ></a>
             </div>
-            <div class="card2">
-                <img src="./assets/reunion.png" alt="">
-                <p class="cardParag2">Start building and sharing with your team today. NinjaMail is renowned for its industry leading team collaboration tools.</p>
-                <a class="card-link2" href="#">Learn More ></a>
+            <div class="card2sect3 cardsSect3">
+                <p class="cardParag">Start building and sharing with your team today. NinjaMail is renowned for its
+                    industry leading team collaboration tools.</p>
+                <a class="card-link" href="#">Learn More ></a>
             </div>
         </div>
-        <div class="card3">
+        <div class="cardX1">
             <h2>The source for proven, engaging email campaigns</h2>
-            <p>Whether you’re a startup, small business, e-commerce store, or  want to promote your app, NinjaMail has the feature set tailored for your business.</p>
+            <p class="cardX1parag">Whether you’re a startup, small business, e-commerce store, or want to promote your app, NinjaMail has
+                the feature set tailored for your business.</p>
         </div>
     </section>
 
     <!-- section 4 -->
     <section id="section4">
 
-        <!-- cards 1 + 2 + 3 -->
-        <div class="cardscontent">
+        <!-- card 3img 1 + 2 + 3 -->
+        <div class="card3imgcontent">
 
             <!-- card 1 -->
-            <div class="card1sect4">
-                <div class="contentsect4">
-                    <img class="imgS4" src="./assets/restaurateur.png" alt="">
+                <div class="card1sect4 cardsSect4">
+                    <!-- <img class="imgS4" src="./assets/restaurateur.png" alt=""> -->
                     <h4>Frankie</h4>
                     <p>Member since 2016</p>
                 </div>
-            </div>
 
             <!-- card 2 -->
-            <div class="card2sect4">
-                <div class="contentsect4">
-                    <img class="imgS4" src="./assets/femme-restau.png" alt="">
+                <div class="card2sect4 cardsSect4">
+                    <!-- <img class="imgS4" src="./assets/femme-restau.png" alt=""> -->
                     <h4>Camile</h4>
                     <p>Member since 2012</p>
                 </div>
-            </div>
 
-            <!-- card 3 -->
-            <div class="card3sect4">
-                <div class="contentsect4">
-                    <img class="imgS4" src="./assets/femme-comptoir.png" alt="">
+            <!-- card sans image -->
+                <div class="card3sect4 cardsSect4">
+                    <!-- <img class="imgS4" src="./assets/femme-comptoir.png" alt=""> -->
                     <h4>Elayne</h4>
                     <p>Member since 2018</p>
                 </div>
-            </div>
         </div>
 
         <!-- title section 4 -->
@@ -141,7 +146,7 @@
 
         <!-- balise de remerciement après clic -->
         <div class="textOut"></div>
-        
+
     </section>
 
     <!-- section 5 -->
@@ -150,11 +155,11 @@
         <!-- title section 5 -->
         <h2>All the best brands already use us.</h2>
         <div class="logos">
-            <img src="./assets/logo-last-paris.png" alt="">
-            <img src="./assets/logo-vodka.png" alt="">
-            <img src="./assets/logo-quest.png" alt="">
-            <img src="./assets/logo-radio-tee.png" alt="">
-            <img src="./assets/logo-game-commerce.png" alt="">
+            <img class="logo" src="./assets/logo-last-paris.png" alt="">
+            <img class="logo" src="./assets/logo-vodka.png" alt="">
+            <img class="logo" src="./assets/logo-quest.png" alt="">
+            <img class="logo" src="./assets/logo-radio-tee.png" alt="">
+            <img class="logo" src="./assets/logo-game-commerce.png" alt="">
         </div>
     </section>
 
@@ -172,19 +177,20 @@
 
             <!-- logo & Ninja mail -->
             <div class="brandContent">
-                <a class="brandLogoA" href="#"><img class="brandLogoImg" src="./assets/mail_icone.png" alt="mail icone"></a>
-                <p><a class="brandMailLink" href="#">Ninja Mail</a></p>
+                <a class="brandLogoA" href="#"><img class="brandLogoImg" src="./assets/mail_icone.png"
+                        alt="mail icone"></a>
+                <p><a class="brandMailLink" href="#">NinjaMail</a></p>
             </div>
 
             <!-- ULs content -->
             <div class="footerULs">
-                <div class="footerUL1">
+                <div class="footerUL1 alignUL">
                     <li><a class="footerULlink" href="#">Features</a></li>
                     <li><a class="footerULlink" href="#">Pricing</a></li>
                     <li><a class="footerULlink" href="#">Services</a></li>
                     <li><a class="footerULlink" href="#">Partners</a></li>
                 </div>
-                <div class="footerUL2">
+                <div class="footerUL2 alignUL">
                     <li><a class="footerULlink" href="#">About Us</a></li>
                     <li><a class="footerULlink" href="#">Tutorials</a></li>
                     <li><a class="footerULlink" href="#">Ressources</a></li>
@@ -192,14 +198,14 @@
                     <li><a class="footerULlink" href="#">Teamplates</a></li>
                     <li><a class="footerULlink" href="#">Case Studies</a></li>
                 </div>
-                <div class="footerUL3">
+                <div class="footerUL3 alignUL">
                     <li><a class="footerULlink" href="#">Medium</a></li>
                     <li><a class="footerULlink" href="#">Tweeter</a></li>
                     <li><a class="footerULlink" href="#">Facebook</a></li>
                     <li><a class="footerULlink" href="#">Instagram</a></li>
                     <li><a class="footerULlink" href="#">LinkedIn</a></li>
                 </div>
-                <div class="footerUL4">
+                <div class="footerUL4 alignUL">
                     <li><a class="footerULlink" href="#">Contact Us</a></li>
                     <li><a class="footerULlink" href="#">Slack</a></li>
                     <li><a class="footerULlink" href="#">Jobs</a></li>
@@ -226,4 +232,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>

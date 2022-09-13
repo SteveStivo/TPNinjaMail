@@ -1,5 +1,4 @@
 // --- bouton vers lien ----
-
 clicBTN0 = () => window.location.href="https://www.symalean.com/";
 clicBTN1 = () => window.location.href="https://www.symalean.com/";
 clicBTN2 = () => window.location.href="https://www.symalean.com/";
@@ -22,5 +21,10 @@ confirm.addEventListener('click', () => {
         console.log("non");
 });
 
-// -- soulignement nav bar --
+// -- responsive nav bar --
+const button = document.getElementById("navButton");
+const nav = document.querySelector(".navItems");
 
+button.addEventListener('click', () => {
+  nav.classList.toggle('miniNav');
+});
