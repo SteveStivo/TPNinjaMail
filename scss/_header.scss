@@ -6,74 +6,61 @@ nav {
     background-color: $color2-light;
 
     #navBarContent {
-
         display: flex;
         align-items: center;
         margin: auto;
-        padding: 1%;
+        padding: 0;
         width: 90%;
-        @include fonts;
         @extend %pb;
         @media screen and (max-width: 576px) {
             justify-content: space-between;
-
         }
 
         // ---- Brand Ninja header ----
         .brandContent {
             display: flex;
-            font-family: $second-font-family;
-            font-weight: 400;
-            font-size: 35px;
-            line-height: 0px;
-            position: relative;
+            align-items: end;
             width: 30%;
-            @media screen and (max-width: 576px) {
-                font-weight: 900;
-                font-size: 22px;
-                line-height: 20px;
-            }
 
             // -- Logo et mail link --
-            .brandLogoA {
-                width: 77px;
-                height: 48px;
-                position: absolute;
-                bottom: -15px;
-
-            }
-
-            p {
-                position: absolute;
-                left: 80px;
-                bottom: -30px;
-
-                .brandMailLink {
-
-                    color: $color2-dark;
-                    @extend %aLink;
+            .navLogo {
+                position: relative;
+                bottom:12px;
+                @media screen and (min-width:992px) {
+                    width: 77px;
+                    height: 48px;
+                }
+                @media screen and (max-width:991px) {
+                    width: 50px;
+                    height: 30px;
                 }
             }
 
+            .brandMailLink {
+                color: $color2-dark;
+                @extend %aLink;
+                @include fonts($second-font-family, 400, 35px, 41px);
+                @media screen and (max-width:991px) {
+                    @include fonts($second-font-family, 900, 22px, 26px);
+                }
+            }
         }
 
         // --- nav links ---
         .navItems {
-            @extend %parag-font;
-            font-weight: 800;
             list-style: none;
             display: flex;
             justify-content: space-around;
             width: 40%;
             margin-left: auto;
             color: $color2-dark;
-
+            @include fonts($second-font-family, 800, 17px, 20px);
             @media screen and (max-width: 576px) {
                 display: none;
-                flex-direction: column;
-                width: 100%;
             }
-
+            @media screen and (max-width:991px) {
+                @include fonts($second-font-family, 800, 11px, 13px);
+            }
 
             .nav-link {
                 color: $color2-dark;
@@ -105,37 +92,22 @@ nav {
                 }
             }
         }
-        .miniNav{
-            display: none;
-            @media screen and (max-width: 576px) {
-                display: flex;
-                flex-direction: column;
-                width: 10%;
-                margin-left: 0;
-                color: $color2-dark;
-                font-family: $second-font-family;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                font-weight: 800;
-                list-style: none;
-            }
-        }
+
+
 
         .btn-0 {
-            @extend %btn-font;
-            font-size: 17px;
             @extend %btn-green;
+            @include fonts($second-font-family, 800, 17px, 20px);
             width: 168px;
             height: 41px;
-            @media screen and (max-width: 576px){
-                font-size: 11px;
+            @media screen and (max-width: 991px){
+                @include fonts($second-font-family, 800, 11px, 13px);
                 width: 115px;
                 height: 25px;
             }
         }
         // --- hamburger ---
-        .navButton{
+        .hamburgerButton{
             background-color: transparent;
             border: 10px;
             color: black;
@@ -151,6 +123,55 @@ nav {
 
             @media screen and (max-width: 576px) {
                 display: block;
+            }
+        }
+
+
+    }
+    .miniNavHide{
+        display: none;
+    }
+    .miniNavShow{
+        display: none;
+        width: 90%;
+        justify-content: space-between;
+        padding-left: 5%;
+        color: $color2-dark;
+        list-style: none;
+        @media screen and (max-width:576px) {
+            display: flex;
+            @include fonts($second-font-family, 800, 12px, 16px);
+            .nav-link {
+                color: $color2-dark;
+                display: inline-block;
+                position: relative;
+                
+                &:link{
+                    text-decoration: none;
+                }
+                
+                &:hover {
+                    color: $color2-dark;
+                    font-weight: 400;
+                }
+                
+                &:hover:after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+                
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    transform-origin: bottom right;
+                    background-color: $color1-main;
+                    transition: transform 0.25s ease-out;
+                    height: 5px;
+                    bottom: -6px;
+                    left: 0;
+                }
             }
         }
     }

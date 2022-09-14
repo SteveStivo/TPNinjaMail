@@ -7,59 +7,75 @@
   line-height: 48px;
 }
 
-#section4 .textOut, #section4 #dial .dialBox input, #section4 .card3imgcontent p, #section3 .cardX1 .cardX1arag, #section1 .card h3, #contentMotion, #footerContent .footerULs, nav #navBarContent .navItems {
+#section4 .textOut, #section4 #dial .dialBox input, #section4 .card3imgcontent p, #section3 .cardX1 .cardX1arag, #section1 .card h3, #contentMotion, #footerContent .footerULs {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
 }
 
-#section6 .btn-4, #section4 #dial .dialBox #confirm, #section4 .card3imgcontent h4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-2, #section1 .btns .btn-1, #footerContent .brandContent, nav #navBarContent .btn-0 {
+#section6 .btn-4, #section4 #dial .dialBox #confirm, #section4 .card3imgcontent h4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-1, #section1 .btns .btn-2, #footerContent .brandContent {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 25px;
+}
+@media screen and (max-width: 991px) {
+  #section6 .btn-4, #section4 #dial .dialBox #confirm, #section4 .card3imgcontent h4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-1, #section1 .btns .btn-2, #footerContent .brandContent {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
 
-#section4 #dial .dialBox #confirm, #section1 .btns .btn-1, nav #navBarContent .btn-0 {
-  width: 200px;
-  height: 65px;
+#section4 #dial .dialBox #confirm, #section1 .btns .btn-1.btn-1, nav #navBarContent .btn-0 {
+  height: 42px;
   background-color: #4BA87D;
   color: #fff;
   border: none;
   letter-spacing: 2.1px;
   transition: 0.3s;
 }
+@media screen and (min-width: 992px) {
+  #section4 #dial .dialBox #confirm, #section1 .btns .btn-1.btn-1, nav #navBarContent .btn-0 {
+    width: 200px;
+    height: 65px;
+  }
+}
 #section4 #dial .dialBox #confirm:hover, #section1 .btns .btn-1:hover, nav #navBarContent .btn-0:hover {
   background-color: #fff;
   color: #4BA87D;
   border: #4BA87D solid 1px;
 }
-#section6 .btn-4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-2 {
-  width: 200px;
-  height: 65px;
+#section6 .btn-4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-2.btn-2 {
+  height: 42px;
   background-color: #fff;
   color: #4BA87D;
   border: 3px solid #4BA87D;
   letter-spacing: 2.1px;
   transition: 0.3s;
 }
+@media screen and (min-width: 992px) {
+  #section6 .btn-4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-2.btn-2 {
+    width: 200px;
+    height: 65px;
+  }
+}
 #section6 .btn-4:hover, #section2 #hero2 .imgBTN .btn-3:hover, #section1 .btns .btn-2:hover {
   background-color: #4BA87D;
   color: #fff;
   border: #fff solid 1px;
 }
-#section6 .btn-4 a, #section2 #hero2 .imgBTN .btn-3 a, #section1 .btns .btn-2 a {
+#section6 .btn-4 a, #section2 #hero2 .imgBTN .btn-3 a, #section1 .btns .btn-2.btn-2 a {
   color: #4BA87D;
 }
 
-#section3 .cardsX2 .card-link:link, #footerContent .footerULs .footerULlink:link, #footerContent .brandContent .brandMailLink:link, nav #navBarContent .navItems .nav-link:link, nav #navBarContent .brandContent p .brandMailLink:link, #section4 #dial .dialBox #confirm a:link, #section1 .btns .btn-1 a:link, nav #navBarContent .btn-0 a:link, #section6 .btn-4 a:link, #section2 #hero2 .imgBTN .btn-3 a:link, #section1 .btns .btn-2 a:link {
+#section3 .cardsX2 .card-link:link, #footerContent .footerULs .footerULlink:link, #footerContent .brandContent .brandMailLink:link, nav #navBarContent .navItems .nav-link:link, nav #navBarContent .brandContent .brandMailLink:link, #section4 #dial .dialBox #confirm a:link, #section1 .btns .btn-1.btn-1 a:link, nav #navBarContent .btn-0 a:link, #section6 .btn-4 a:link, #section2 #hero2 .imgBTN .btn-3 a:link, #section1 .btns .btn-2.btn-2 a:link {
   text-decoration: none;
 }
-#section3 .cardsX2 .card-link:visited, #footerContent .footerULs .footerULlink:visited, #footerContent .brandContent .brandMailLink:visited, nav #navBarContent .navItems .nav-link:visited, nav #navBarContent .brandContent p .brandMailLink:visited, #section4 #dial .dialBox #confirm a:visited, #section1 .btns .btn-1 a:visited, nav #navBarContent .btn-0 a:visited, #section6 .btn-4 a:visited, #section2 #hero2 .imgBTN .btn-3 a:visited, #section1 .btns .btn-2 a:visited {
+#section3 .cardsX2 .card-link:visited, #footerContent .footerULs .footerULlink:visited, #footerContent .brandContent .brandMailLink:visited, nav #navBarContent .navItems .nav-link:visited, nav #navBarContent .brandContent .brandMailLink:visited, #section4 #dial .dialBox #confirm a:visited, #section1 .btns .btn-1.btn-1 a:visited, nav #navBarContent .btn-0 a:visited, #section6 .btn-4 a:visited, #section2 #hero2 .imgBTN .btn-3 a:visited, #section1 .btns .btn-2.btn-2 a:visited {
   text-decoration: none;
 }
-#section3 .cardsX2 .card-link:hover, #footerContent .footerULs .footerULlink:hover, #footerContent .brandContent .brandMailLink:hover, nav #navBarContent .navItems .nav-link:hover, nav #navBarContent .brandContent p .brandMailLink:hover, #section4 #dial .dialBox #confirm a:hover, #section1 .btns .btn-1 a:hover, nav #navBarContent .btn-0 a:hover, #section6 .btn-4 a:hover, #section2 #hero2 .imgBTN .btn-3 a:hover, #section1 .btns .btn-2 a:hover {
+#section3 .cardsX2 .card-link:hover, #footerContent .footerULs .footerULlink:hover, #footerContent .brandContent .brandMailLink:hover, nav #navBarContent .navItems .nav-link:hover, nav #navBarContent .brandContent .brandMailLink:hover, #section4 #dial .dialBox #confirm a:hover, #section1 .btns .btn-1.btn-1 a:hover, nav #navBarContent .btn-0 a:hover, #section6 .btn-4 a:hover, #section2 #hero2 .imgBTN .btn-3 a:hover, #section1 .btns .btn-2.btn-2 a:hover {
   color: #4BA87D;
 }
 
@@ -104,12 +120,8 @@ nav #navBarContent {
   display: flex;
   align-items: center;
   margin: auto;
-  padding: 1%;
+  padding: 0;
   width: 90%;
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 71px;
 }
 @media screen and (max-width: 576px) {
   nav #navBarContent {
@@ -118,48 +130,63 @@ nav #navBarContent {
 }
 nav #navBarContent .brandContent {
   display: flex;
+  align-items: end;
+  width: 30%;
+}
+nav #navBarContent .brandContent .navLogo {
+  position: relative;
+  bottom: 12px;
+}
+@media screen and (min-width: 992px) {
+  nav #navBarContent .brandContent .navLogo {
+    width: 77px;
+    height: 48px;
+  }
+}
+@media screen and (max-width: 991px) {
+  nav #navBarContent .brandContent .navLogo {
+    width: 50px;
+    height: 30px;
+  }
+}
+nav #navBarContent .brandContent .brandMailLink {
+  color: #000;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 35px;
-  line-height: 0px;
-  position: relative;
-  width: 30%;
+  line-height: 41px;
 }
-@media screen and (max-width: 576px) {
-  nav #navBarContent .brandContent {
+@media screen and (max-width: 991px) {
+  nav #navBarContent .brandContent .brandMailLink {
+    font-family: "Raleway", sans-serif;
     font-weight: 900;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 26px;
   }
 }
-nav #navBarContent .brandContent .brandLogoA {
-  width: 77px;
-  height: 48px;
-  position: absolute;
-  bottom: -15px;
-}
-nav #navBarContent .brandContent p {
-  position: absolute;
-  left: 80px;
-  bottom: -30px;
-}
-nav #navBarContent .brandContent p .brandMailLink {
-  color: #000;
-}
 nav #navBarContent .navItems {
-  font-weight: 800;
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 40%;
   margin-left: auto;
   color: #000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
 }
 @media screen and (max-width: 576px) {
   nav #navBarContent .navItems {
     display: none;
-    flex-direction: column;
-    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  nav #navBarContent .navItems {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 13px;
   }
 }
 nav #navBarContent .navItems .nav-link {
@@ -187,37 +214,25 @@ nav #navBarContent .navItems .nav-link:after {
   bottom: -6px;
   left: 0;
 }
-nav #navBarContent .miniNav {
-  display: none;
-}
-@media screen and (max-width: 576px) {
-  nav #navBarContent .miniNav {
-    display: flex;
-    flex-direction: column;
-    width: 10%;
-    margin-left: 0;
-    color: #000;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 800;
-    list-style: none;
-  }
-}
 nav #navBarContent .btn-0 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 17px;
+  line-height: 20px;
   width: 168px;
   height: 41px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
   nav #navBarContent .btn-0 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
     font-size: 11px;
+    line-height: 13px;
     width: 115px;
     height: 25px;
   }
 }
-nav #navBarContent .navButton {
+nav #navBarContent .hamburgerButton {
   background-color: transparent;
   border: 10px;
   color: black;
@@ -228,12 +243,60 @@ nav #navBarContent .navButton {
   line-height: 70px;
   display: none;
 }
-nav #navBarContent .navButton:focus {
+nav #navBarContent .hamburgerButton:focus {
   outline: none;
 }
 @media screen and (max-width: 576px) {
-  nav #navBarContent .navButton {
+  nav #navBarContent .hamburgerButton {
     display: block;
+  }
+}
+nav .miniNavHide {
+  display: none;
+}
+nav .miniNavShow {
+  display: none;
+  width: 90%;
+  justify-content: space-between;
+  padding-left: 5%;
+  color: #000;
+  list-style: none;
+}
+@media screen and (max-width: 576px) {
+  nav .miniNavShow {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  nav .miniNavShow .nav-link {
+    color: #000;
+    display: inline-block;
+    position: relative;
+  }
+  nav .miniNavShow .nav-link:link {
+    text-decoration: none;
+  }
+  nav .miniNavShow .nav-link:hover {
+    color: #000;
+    font-weight: 400;
+  }
+  nav .miniNavShow .nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  nav .miniNavShow .nav-link:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background-color: #4BA87D;
+    transition: transform 0.25s ease-out;
+    height: 5px;
+    bottom: -6px;
+    left: 0;
   }
 }
 
@@ -332,7 +395,12 @@ body {
   display: flex;
   width: 80%;
   margin: auto;
-  padding-top: 90px;
+  padding-top: 70px;
+}
+@media screen and (max-width: 576px) {
+  #section1 {
+    padding-top: 110px;
+  }
 }
 #section1 .hero {
   z-index: 1;
@@ -358,9 +426,10 @@ body {
 }
 @media screen and (max-width: 576px) {
   #section1 .card {
-    width: 75%;
+    width: 90%;
     justify-content: center;
     margin: auto;
+    padding-left: 10%;
   }
 }
 #section1 .card h2 {
@@ -393,31 +462,18 @@ body {
   }
 }
 #section1 .btns {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
-#section1 .btns .btn-1 {
+#section1 .btns .btn-1, #section1 .btns .btn-2 {
   width: 45%;
 }
 @media screen and (max-width: 576px) {
-  #section1 .btns .btn-1 {
-    font-size: 10px;
-    line-height: 15px;
+  #section1 .btns .btn-1, #section1 .btns .btn-2 {
     height: 30px;
   }
 }
-#section1 .btns .btn-2 {
-  width: 45%;
-}
-@media screen and (max-width: 576px) {
-  #section1 .btns .btn-2 {
-    font-size: 10px;
-    line-height: 15px;
-    height: 30px;
-  }
-}
-
 #section2 {
   background-color: #F7F7F7;
 }
@@ -425,12 +481,12 @@ body {
   background-image: url(../assets/rue_video.png);
   background-position: center;
   background-repeat: no-repeat;
-  width: 70%;
-  height: 530px;
   margin: auto;
   padding: 5%;
   display: flex;
   justify-content: center;
+  width: 70%;
+  height: 530px;
 }
 @media screen and (max-width: 576px) {
   #section2 #hero2 {
@@ -468,28 +524,25 @@ body {
   }
 }
 #section2 #hero2 .imgBTN .btn-3 {
-  z-index: 2;
   border: none;
+  z-index: 2;
   margin-bottom: auto;
 }
 @media screen and (max-width: 576px) {
   #section2 #hero2 .imgBTN .btn-3 {
-    font-size: 6px;
-    line-height: 7px;
-    width: 80px;
-    height: 25px;
+    height: 30px;
   }
 }
 
 #section3 {
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 500;
-  font-size: 19px;
-  line-height: 26px;
   width: 80%;
   margin: auto;
   margin-top: 2%;
   display: flex;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 26px;
 }
 @media screen and (max-width: 576px) {
   #section3 {

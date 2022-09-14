@@ -21,10 +21,11 @@ confirm.addEventListener('click', () => {
         console.log("non");
 });
 
-// -- responsive nav bar --
-const button = document.getElementById("navButton");
-const nav = document.querySelector(".navItems");
+// -- hamburger nav bar --
+const navBtton = document.getElementById("navButton");
+const miniNav = document.querySelector(".miniNavHide");
 
-button.addEventListener('click', () => {
-  nav.classList.toggle('miniNav');
+navButton.addEventListener('click', () => {
+  miniNav.classList.toggle('miniNavShow');
+  miniNav.classList.toggle('miniNavHide')
 });

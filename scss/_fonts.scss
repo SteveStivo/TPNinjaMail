@@ -26,34 +26,19 @@ $second-font-family: 'Raleway', sans-serif;
     font-family: $second-font-family;
     font-weight: 900;
     font-size: 21px;
-    line-height: 26px;
-
+    line-height: 25px;
+    @media screen and (max-width:991px) {
+        font-size: 13px;
+        line-height: 15px;
+        }
 }
-
 
 %btn-green {
-    width: 200px;
-    height: 65px;
-    background-color: $color1-main;
-    color: $color2-light;
-    border: none;
-    letter-spacing: 2.1px;
-    transition: 0.3s;
-
-    &:hover {
-        background-color: #fff;
-        color: $color1-main;
-        border: $color1-main solid 1px;
-    }
-
-    a {
-        @extend %aLink;
-    }
-}
-
-%btn-green992 {
-    width: 131px;
     height: 42px;
+    @media screen and (min-width:992px) {
+        width: 200px;
+        height: 65px;
+    }
     background-color: $color1-main;
     color: $color2-light;
     border: none;
@@ -72,8 +57,11 @@ $second-font-family: 'Raleway', sans-serif;
 }
 
 %btn-white {
-    width: 200px;
-    height: 65px;
+    height: 42px;
+    @media screen and (min-width:992px) {
+        width: 200px;
+        height: 65px;
+    }
     background-color: $color2-light;
     color: $color1-main;
     border: 3px solid $color1-main;

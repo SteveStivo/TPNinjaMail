@@ -13,8 +13,11 @@ body {
     display: flex;
     width: 80%;
     margin: auto;
-    padding-top: min(90px);
+    padding-top: min(70px);
     @extend %pb;
+    @media screen and (max-width:576px) {
+        padding-top: 110px;
+    }
 
     // hero -- section 1 --
     .hero {
@@ -24,22 +27,23 @@ body {
         background-position-y: center;
         background-repeat: no-repeat;
         width: 100%;
+        height: 250px;
         @media screen and (min-width: 992px) {
             height: 383px;
         }
         @media screen and (max-width: 576px) {
             height: 212px;
         }
-        height: 250px;
     }
 
     // card
     .card {
         width: 55%;
         @media screen and (max-width: 576px) {
-            width: 75%;
+            width: 90%;
             justify-content: center;
             margin: auto;
+            padding-left: 10%;
         }
 
         h2 {
@@ -66,27 +70,21 @@ body {
     // boutons -- section 1 --
     .btns {
         @extend %my;
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
 
-        .btn-1 {
-            @extend %btn-font, %btn-green;
+        .btn-1, .btn-2{
+            @extend %btn-font;
             width: 45%;
             @media screen and (max-width: 576px) {
-                font-size: 10px;
-                line-height:15px;
                 height: 30px;
             }
-        }
-
-        .btn-2 {
-            @extend %btn-font, %btn-white;
-            width: 45%;
-            @media screen and (max-width: 576px) {
-                font-size: 10px;
-                line-height:15px;
-                height: 30px;
+            &.btn-1{
+                @extend %btn-green;
+            }
+            &.btn-2{
+                @extend %btn-white;
             }
         }
     }
@@ -100,15 +98,15 @@ body {
         background-image: url(../assets/rue_video.png);
         background-position: center;
         background-repeat: no-repeat;
+        margin: auto;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
         width: 70%;
         height: 530px;
         @media screen and (max-width: 576px) {
             height: 150px;
         }
-        margin: auto;
-        padding: 5%;
-        display: flex;
-        justify-content: center;
 
         .imgBTN {
             display: flex;
@@ -130,14 +128,11 @@ body {
 
             .btn-3 {
                 @extend %btn-font, %btn-white;
+                border: none;
                 @media screen and (max-width: 576px) {
-                    font-size: 6px;
-                    line-height: 7px;
-                    width: 80px;
-                    height: 25px;
+                    height: 30px;
                 }
                 z-index: 2;
-                border: none;
                 margin-bottom: auto;
             }
         }
@@ -146,11 +141,11 @@ body {
 
 // --- section 3 cardsX2img + cardX1 ---
 #section3 {
-    @include fonts($main-font-family, 500, 19px, 26px);
     width: 80%;
     margin: auto;
     margin-top: 2%;
     display: flex;
+    @include fonts($main-font-family, 500, 19px, 26px);
     @media screen and (max-width:576px){
         flex-direction: column;
         height: 690px;
