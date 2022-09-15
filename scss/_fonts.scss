@@ -19,7 +19,6 @@ $second-font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-
 }
 
 %btn-font {
@@ -115,19 +114,29 @@ $second-font-family: 'Raleway', sans-serif;
 }
 
 %cardParag {
-    width: 58%;
-    top: 84%;
-    transform: translate(1%, 0%);
+    width: 60%;
     padding: 5%;
     background-color: $color2-light;
+    transform: translate(20%, 280%);
+    @media screen and (min-width:992px) {
+        transform: translate(20%, 180%);
+    }
 }
 
 %card-link {
-    transform: translate(0%, 100%);
-    top: 150%;
-    left: 5%;
+    position: relative;
+    top: 75%;
+    left: 19%;
+    @media screen and (max-width:576px){
+        top: 55%;
+    }
     color: $color1-main;
-
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
     &:hover {
         color: $color2-dark;
     }

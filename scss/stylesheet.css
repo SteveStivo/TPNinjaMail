@@ -1,27 +1,27 @@
 @import url("http://fonts.cdnfonts.com/css/playfair-display");
 @import url("http://fonts.cdnfonts.com/css/raleway-5");
-#section5 h2, #section4 h2, #section3 .cardX1 h2 {
+#section5 h2, #section3 .cardX1 h2 {
   font-family: "Playfair Display", sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 48px;
 }
 
-#section4 .textOut, #section4 #dial .dialBox input, #section4 .card3imgcontent p, #section3 .cardX1 .cardX1arag, #section1 .card h3, #contentMotion, #footerContent .footerULs {
+#section4 .textOut, #section4 #dial .dialBox input, #section1 .card h3, #contentMotion, #footerContent .footerULs {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
 }
 
-#section6 .btn-4, #section4 #dial .dialBox #confirm, #section4 .card3imgcontent h4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-1, #section1 .btns .btn-2, #footerContent .brandContent {
+#section6 .btn-4, #section4 #dial .dialBox #confirm, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-1, #section1 .btns .btn-2, #footerContent .brandContent {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 21px;
   line-height: 25px;
 }
 @media screen and (max-width: 991px) {
-  #section6 .btn-4, #section4 #dial .dialBox #confirm, #section4 .card3imgcontent h4, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-1, #section1 .btns .btn-2, #footerContent .brandContent {
+  #section6 .btn-4, #section4 #dial .dialBox #confirm, #section2 #hero2 .imgBTN .btn-3, #section1 .btns .btn-1, #section1 .btns .btn-2, #footerContent .brandContent {
     font-size: 13px;
     line-height: 15px;
   }
@@ -69,22 +69,22 @@
   color: #4BA87D;
 }
 
-#section3 .cardsX2 .card-link:link, #footerContent .footerULs .footerULlink:link, #footerContent .brandContent .brandMailLink:link, nav #navBarContent .navItems .nav-link:link, nav #navBarContent .brandContent .brandMailLink:link, #section4 #dial .dialBox #confirm a:link, #section1 .btns .btn-1.btn-1 a:link, nav #navBarContent .btn-0 a:link, #section6 .btn-4 a:link, #section2 #hero2 .imgBTN .btn-3 a:link, #section1 .btns .btn-2.btn-2 a:link {
+#footerContent .footerULs .footerULlink:link, #footerContent .brandContent .brandMailLink:link, nav #navBarContent .navItems .nav-link:link, nav #navBarContent .brandContent .brandMailLink:link, #section4 #dial .dialBox #confirm a:link, #section1 .btns .btn-1.btn-1 a:link, nav #navBarContent .btn-0 a:link, #section6 .btn-4 a:link, #section2 #hero2 .imgBTN .btn-3 a:link, #section1 .btns .btn-2.btn-2 a:link {
   text-decoration: none;
 }
-#section3 .cardsX2 .card-link:visited, #footerContent .footerULs .footerULlink:visited, #footerContent .brandContent .brandMailLink:visited, nav #navBarContent .navItems .nav-link:visited, nav #navBarContent .brandContent .brandMailLink:visited, #section4 #dial .dialBox #confirm a:visited, #section1 .btns .btn-1.btn-1 a:visited, nav #navBarContent .btn-0 a:visited, #section6 .btn-4 a:visited, #section2 #hero2 .imgBTN .btn-3 a:visited, #section1 .btns .btn-2.btn-2 a:visited {
+#footerContent .footerULs .footerULlink:visited, #footerContent .brandContent .brandMailLink:visited, nav #navBarContent .navItems .nav-link:visited, nav #navBarContent .brandContent .brandMailLink:visited, #section4 #dial .dialBox #confirm a:visited, #section1 .btns .btn-1.btn-1 a:visited, nav #navBarContent .btn-0 a:visited, #section6 .btn-4 a:visited, #section2 #hero2 .imgBTN .btn-3 a:visited, #section1 .btns .btn-2.btn-2 a:visited {
   text-decoration: none;
 }
-#section3 .cardsX2 .card-link:hover, #footerContent .footerULs .footerULlink:hover, #footerContent .brandContent .brandMailLink:hover, nav #navBarContent .navItems .nav-link:hover, nav #navBarContent .brandContent .brandMailLink:hover, #section4 #dial .dialBox #confirm a:hover, #section1 .btns .btn-1.btn-1 a:hover, nav #navBarContent .btn-0 a:hover, #section6 .btn-4 a:hover, #section2 #hero2 .imgBTN .btn-3 a:hover, #section1 .btns .btn-2.btn-2 a:hover {
+#footerContent .footerULs .footerULlink:hover, #footerContent .brandContent .brandMailLink:hover, nav #navBarContent .navItems .nav-link:hover, nav #navBarContent .brandContent .brandMailLink:hover, #section4 #dial .dialBox #confirm a:hover, #section1 .btns .btn-1.btn-1 a:hover, nav #navBarContent .btn-0 a:hover, #section6 .btn-4 a:hover, #section2 #hero2 .imgBTN .btn-3 a:hover, #section1 .btns .btn-2.btn-2 a:hover {
   color: #4BA87D;
 }
 
-#section4 .card3imgcontent p, #section4 .card3imgcontent h4, #section1 .btns, #section1 .card h3, #section1 .card h2 {
+#section4 .card3imgcontent .cardsSect4 p, #section4 .card3imgcontent .cardsSect4 h4, #section1 .btns, #section1 .card h3, #section1 .card h2 {
   margin-top: 4%;
   margin-bottom: 4%;
 }
 
-#section4 .card3imgcontent p, #section4 .card3imgcontent h4 {
+#section4 .card3imgcontent .cardsSect4 p, #section4 .card3imgcontent .cardsSect4 h4 {
   margin-left: 10%;
 }
 
@@ -93,18 +93,33 @@
 }
 
 #section3 .cardsX2 .cardParag {
-  width: 58%;
-  top: 84%;
-  transform: translate(1%, 0%);
+  width: 60%;
   padding: 5%;
   background-color: #fff;
+  transform: translate(20%, 280%);
+}
+@media screen and (min-width: 992px) {
+  #section3 .cardsX2 .cardParag {
+    transform: translate(20%, 180%);
+  }
 }
 
 #section3 .cardsX2 .card-link {
-  transform: translate(0%, 100%);
-  top: 150%;
-  left: 5%;
+  position: relative;
+  top: 75%;
+  left: 19%;
   color: #4BA87D;
+}
+@media screen and (max-width: 576px) {
+  #section3 .cardsX2 .card-link {
+    top: 55%;
+  }
+}
+#section3 .cardsX2 .card-link:link {
+  text-decoration: none;
+}
+#section3 .cardsX2 .card-link:visited {
+  text-decoration: none;
 }
 #section3 .cardsX2 .card-link:hover {
   color: #000;
@@ -320,6 +335,12 @@ nav .miniNavShow {
   width: 92px;
   height: 46px;
 }
+@media screen and (max-width: 991px) {
+  #footerContent .brandContent .brandLogoA .brandLogoImg {
+    width: 50px;
+    height: 30px;
+  }
+}
 #footerContent .brandContent .brandMailLink {
   color: #000;
 }
@@ -396,6 +417,11 @@ body {
   width: 80%;
   margin: auto;
   padding-top: 70px;
+}
+@media screen and (max-width: 991px) {
+  #section1 {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 576px) {
   #section1 {
@@ -485,7 +511,7 @@ body {
   padding: 5%;
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   height: 530px;
 }
 @media screen and (max-width: 576px) {
@@ -535,83 +561,64 @@ body {
 }
 
 #section3 {
+  display: flex;
   width: 80%;
   margin: auto;
-  margin-top: 2%;
-  display: flex;
-  font-family: "Playfair Display", sans-serif;
+  padding-top: 5%;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 16px;
   line-height: 26px;
+}
+@media screen and (max-width: 991px) {
+  #section3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    width: 90%;
+  }
 }
 @media screen and (max-width: 576px) {
   #section3 {
     flex-direction: column;
-    height: 690px;
-    font-family: "Playfair Display", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
   }
 }
 #section3 .cardsX2 {
-  width: 65%;
   display: flex;
+  width: 68%;
   margin: auto;
   justify-content: space-between;
 }
 @media screen and (max-width: 576px) {
   #section3 .cardsX2 {
     flex-direction: column;
-    width: 100%;
     align-items: center;
+    width: 100%;
   }
 }
 #section3 .cardsX2 .cardsSect3 {
+  height: 400px;
+  width: 48%;
   background-repeat: no-repeat;
-  height: 275px;
-}
-@media screen and (min-width: 992px) {
-  #section3 .cardsX2 .cardsSect3 {
-    width: 50%;
-  }
+  background-position-x: center;
 }
 @media screen and (max-width: 576px) {
   #section3 .cardsX2 .cardsSect3 {
-    width: 70%;
+    width: 100%;
   }
 }
 #section3 .cardsX2 .card1sect3 {
   background-image: url(../assets/femme-asiatique.png);
 }
-@media screen and (min-width: 992px) {
-  #section3 .cardsX2 .card1sect3 {
-    position: relative;
-  }
-}
-@media screen and (max-width: 576px) {
-  #section3 .cardsX2 .card1sect3 {
-    margin-top: 15%;
-  }
-}
 #section3 .cardsX2 .card2sect3 {
   background-image: url(../assets/reunion.png);
 }
-@media screen and (min-width: 992px) {
-  #section3 .cardsX2 .card2sect3 {
-    position: relative;
-  }
-}
-@media screen and (max-width: 576px) {
-  #section3 .cardsX2 .card2sect3 {
-    margin-top: 33%;
-  }
-}
-@media screen and (max-width: 576px) {
-  #section3 .cardsX2 .cardParag {
-    margin-top: 80%;
-    width: 84%;
-    padding: 7%;
+@media screen and (max-width: 991px) {
+  #section3 .cardsX2 .parag2 {
+    transform: translate(20%, 235%);
+    margin-right: 0%;
   }
 }
 #section3 .cardsX2 .card-link {
@@ -620,13 +627,8 @@ body {
   font-size: 16px;
   line-height: 19px;
 }
-@media screen and (min-width: 992px) {
-  #section3 .cardsX2 .card-link {
-    position: absolute;
-  }
-}
 #section3 .cardX1 {
-  width: 35%;
+  width: 28%;
   margin: 0px;
 }
 @media screen and (max-width: 576px) {
@@ -636,14 +638,30 @@ body {
     padding-bottom: 5%;
   }
 }
+#section3 .cardX1 .cardX1parag {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 26px;
+}
 @media screen and (max-width: 576px) {
-  #section3 .cardX1 .cardX1arag {
+  #section3 .cardX1 .cardX1parag {
     width: 80%;
   }
 }
+@media screen and (max-width: 991px) {
+  #section3 .cardX1 .cardX1parag {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+#section3 .cardX1 h2 {
+  margin-top: 0%;
+}
 @media screen and (max-width: 576px) {
   #section3 .cardX1 h2 {
-    padding-top: 25%;
     font-size: 28px;
     line-height: 31px;
   }
@@ -658,7 +676,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   #section4 {
-    padding-top: 70%;
+    padding-top: 0%;
   }
 }
 #section4 .card3imgcontent {
@@ -682,59 +700,70 @@ body {
   width: 27%;
   height: 240px;
 }
-#section4 .card3imgcontent .card1sect4 {
+@media screen and (max-width: 576px) {
+  #section4 .card3imgcontent .cardsSect4 {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+}
+#section4 .card3imgcontent .cardsSect4.card1sect4 {
   background-image: url(../assets/restaurateur.png);
 }
-@media screen and (max-width: 576px) {
-  #section4 .card3imgcontent .card1sect4 {
-    width: 70%;
-    padding-bottom: 5%;
-  }
-}
-#section4 .card3imgcontent .card2sect4 {
+#section4 .card3imgcontent .cardsSect4.card2sect4 {
   background-image: url(../assets/femme-restau.png);
 }
-@media screen and (max-width: 576px) {
-  #section4 .card3imgcontent .card2sect4 {
-    width: 70%;
-    padding-bottom: 5%;
-  }
-}
-#section4 .card3imgcontent .card3sect4 {
+#section4 .card3imgcontent .cardsSect4.card3sect4 {
   background-image: url(../assets/femme-comptoir.png);
 }
-@media screen and (max-width: 576px) {
-  #section4 .card3imgcontent .card3sect4 {
-    width: 70%;
-    padding-bottom: 5%;
-  }
-}
-#section4 .card3imgcontent h4 {
-  transform: translate(0%, 50%);
+#section4 .card3imgcontent .cardsSect4 h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
   font-size: 34px;
+  line-height: 40px;
+  transform: translate(0%, 50%);
   z-index: 2;
 }
-@media screen and (max-width: 576px) {
-  #section4 .card3imgcontent h4 {
-    font-size: 21px;
+@media screen and (max-width: 991px) {
+  #section4 .card3imgcontent .cardsSect4 h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 22px;
     line-height: 26px;
   }
 }
-#section4 .card3imgcontent p {
+#section4 .card3imgcontent .cardsSect4 p {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
   z-index: 2;
 }
+@media screen and (max-width: 991px) {
+  #section4 .card3imgcontent .cardsSect4 p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 #section4 h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 48px;
   width: 80%;
   margin: auto;
   padding-top: 2%;
   text-align: center;
   color: black;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
   #section4 h2 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 900;
     font-size: 26px;
     line-height: 36px;
+    width: 100%;
   }
 }
 #section4 #dial {
@@ -744,7 +773,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   #section4 #dial {
-    width: 70%;
+    width: 90%;
   }
 }
 #section4 #dial .dialBox {
@@ -759,8 +788,8 @@ body {
 }
 #section4 #dial .dialBox input {
   box-sizing: border-box;
-  width: 420px;
-  height: 65px;
+  width: 95%;
+  height: 100%;
 }
 @media screen and (max-width: 576px) {
   #section4 #dial .dialBox input {
@@ -768,13 +797,11 @@ body {
     height: 43px;
   }
 }
-@media screen and (max-width: 576px) {
-  #section4 #dial .dialBox #confirm {
-    width: 144px;
-    height: 42px;
-    font-size: 13px;
-    line-height: 15px;
-  }
+#section4 #dial .dialBox form {
+  width: 90%;
+}
+#section4 #dial .dialBox #confirm {
+  width: 144px;
 }
 #section4 .textOut {
   padding: 3%;

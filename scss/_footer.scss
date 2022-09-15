@@ -19,6 +19,12 @@
         .brandLogoA {
             width: 92px;
             height: 46px;
+            .brandLogoImg{
+                @media screen and (max-width:991px) {
+                    width: 50px;
+                    height: 30px;
+                }
+            }
         }
 
         .brandMailLink {

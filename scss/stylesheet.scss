@@ -11,6 +11,9 @@ body {
 // --- section 1 hero ---
 #section1 {
     display: flex;
+    @media screen and (max-width:991px){
+        width: 90%;
+        }
     width: 80%;
     margin: auto;
     padding-top: min(70px);
@@ -102,7 +105,7 @@ body {
         padding: 5%;
         display: flex;
         justify-content: center;
-        width: 70%;
+        width: 80%;
         height: 530px;
         @media screen and (max-width: 576px) {
             height: 150px;
@@ -141,103 +144,96 @@ body {
 
 // --- section 3 cardsX2img + cardX1 ---
 #section3 {
+    display: flex;
     width: 80%;
     margin: auto;
-    margin-top: 2%;
-    display: flex;
-    @include fonts($main-font-family, 500, 19px, 26px);
+    padding-top: 5%;
+    justify-content: space-between;
+    @include fonts($second-font-family, 500, 16px, 26px);
+    @media screen and (max-width:991px){
+        @include fonts($second-font-family, 500, 12px, 16px);
+        width: 90%;
+    }
+
     @media screen and (max-width:576px){
         flex-direction: column;
-        height: 690px;
-        @include fonts($main-font-family, 500, 12px, 16px);
     }
 
     // --- groupe cardsX2img ----
     .cardsX2 {
-        width: 65%;
         display: flex;
-        @media screen and (max-width:576px){
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-        }
+        width: 68%;
         margin: auto;
         justify-content: space-between;
+        @media screen and (max-width:576px){
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
 
         .cardsSect3 {
+            height: 400px;
+            width: 48%;
             background-repeat: no-repeat;
-            height: 275px;
-            @media screen and (min-width: 992px) {
-                width: 50%;
-            }
+            background-position-x: center;
             @media screen and (max-width:576px){
-                width: 70%;
+                width: 100%;
             }
         }
 
         // flex card 1 (gauche)
         .card1sect3 {
             background-image: url(../assets/femme-asiatique.png);
-            @media screen and (min-width:992px) {
-                position: relative;
-            }
-            @media screen and (max-width:576px){
-                margin-top: 15%;
-            }
         }
 
         // flex card 2 (milieu)
         .card2sect3 {
             background-image: url(../assets/reunion.png);
-            @media screen and (min-width:992px) {
-                position: relative;
-            }
-            @media screen and (max-width:576px){
-                margin-top: 33%;
-            }
         }
 
         // paragraphe de flex card
         .cardParag {
             @extend %cardParag;
-            @media screen and (max-width:576px){
-                margin-top: 80%;
-                width: 84%;
-                padding: 7%;
-            }
-
         }
+        .parag2{
+            @media screen and (max-width:991px) {
+                transform: translate(20%, 235%);
+                margin-right: 0%;
+            }
+        }
+        
 
         // lien "learn more" des cardsX2img
         .card-link {
-            @media screen and (min-width:992px) {
-                position: absolute;
-            }
             @include fonts($second-font-family, 800, 16px, 19px);
-            @extend %aLink, %card-link;
+            @extend %card-link;
         }
     }
 
     // ---  cardX1 sans image --
     .cardX1 {
-        width: 35%;
+        width: 28%;
         @media screen and (max-width:576px){
             width: 100%;
             padding-top: 5%;
             padding-bottom: 5%;
         }
         margin: 0px;
-        .cardX1arag{
-            @extend %parag-font;
+        .cardX1parag{
+            @include fonts($second-font-family, 500, 19px, 26px);
             @media screen and (max-width: 576px) {
-                width: 80%;;
+                width: 80%;
             }
+            @media screen and (max-width:991px){
+                @include fonts($second-font-family, 500, 12px, 16px);
+            }
+        
         }
 
         h2 {
             @extend %title-font;
+            margin-top: 0%;
             @media screen and (max-width: 576px) {
-                padding-top: 25%;
                 font-size: 28px;
                 line-height: 31px;
             }
@@ -254,7 +250,7 @@ body {
     margin: auto;
     color: $color2-light;
     @media screen and (max-width: 576px) {
-        padding-top: 70%;
+        padding-top: 0%;
     }
 
     // -- card3img 1 + 2 + 3 --
@@ -267,7 +263,7 @@ body {
             width: 100%;
             align-items: center;
         }
-
+        
         .cardsSect4 {
             display: flex;
             flex-direction: column;
@@ -275,67 +271,56 @@ body {
             background-repeat: no-repeat;
             justify-content: end;
             width: 27%;
+            @media screen and (max-width: 576px) {
+                width: 100%;
+                padding-bottom: 5%;
+            }
             height: 240px;
-        }
 
-        // --- image card ---
-        .card1sect4 {
-            background-image: url(../assets/restaurateur.png);
-            @media screen and (max-width: 576px) {
-                width: 70%;
-                padding-bottom: 5%;
+            // --- image card ---
+            &.card1sect4 {
+                background-image: url(../assets/restaurateur.png);
             }
-        }
-
-        // --- image card ---
-        .card2sect4 {
-            background-image: url(../assets/femme-restau.png);
-            @media screen and (max-width: 576px) {
-                width: 70%;
-                padding-bottom: 5%;
+            &.card2sect4 {
+                background-image: url(../assets/femme-restau.png);
             }
-        }
-
-        // --- image card ---
-        .card3sect4 {
-            background-image: url(../assets/femme-comptoir.png);
-            @media screen and (max-width: 576px) {
-                width: 70%;
-                padding-bottom: 5%;
+            &.card3sect4 {
+                background-image: url(../assets/femme-comptoir.png);
             }
-        }
-
-        h4 {
-            @extend %btn-font, %mx, %my;
-            transform: translate(0%, 50%);
-            //height: 50%;
-            font-size: 34px;
-            z-index: 2;
-            @media screen and (max-width: 576px) {
-                font-size: 21px;
-                line-height: 26px;
+            
+            // --- txt card ---
+            h4 {
+                @extend %mx, %my;
+                @include fonts($second-font-family, 900, 34px, 40px);
+                @media screen and (max-width:991px) {
+                    @include fonts($second-font-family, 900, 22px, 26px);
+                }
+                transform: translate(0%, 50%);
+                z-index: 2;
             }
-        }
-
-        p {
-            @extend %parag-font, %mx, %my;
-            //height: 25%;
-            font-weight: 700;
-            z-index: 2;
+            
+            p {
+                @extend %mx, %my;
+                @include fonts($second-font-family, 700, 19px, 22px);
+                @media screen and (max-width:991px) {
+                    @include fonts($second-font-family, 700, 12px, 14px);
+                }
+                z-index: 2;
+            }
         }
     }
 
     // -- title Section 4 --
     h2 {
-        @extend %title-font;
+        @include fonts($main-font-family, 900, 44px, 48px);
         width: 80%;
         margin: auto;
         padding-top: 2%;
         text-align: center;
         color: black;
-        @media screen and (max-width:576px) {
-            font-size: 26px;
-            line-height: 36px;
+        @media screen and (max-width:991px) {
+            @include fonts($main-font-family, 900, 26px, 36px);
+            width: 100%;
         }
     }
 
@@ -345,7 +330,7 @@ body {
         padding: 3%;
         width: 46%;
         @media screen and (max-width:576px) {
-            width: 70%;
+            width: 90%;
         }
 
         .dialBox {
@@ -355,27 +340,22 @@ body {
                 flex-direction: column;
                 align-items: center;
             }
-
             input {
                 box-sizing: border-box;
-                width: 420px;
-                height: 65px;
+                width: 95%;
+                height: 100%;
                 @extend %parag-font;
                 @media screen and (max-width:576px) {
                     margin-bottom: 5%;
-                    //width: 100%;
                     height: 43px;
                 }
             }
-
+            form{
+                width: 90%;
+            }
             #confirm {
                 @extend %btn-green, %btn-font;
-                @media screen and (max-width:576px) {
                     width: 144px;
-                    height: 42px;
-                    font-size: 13px;
-                    line-height: 15px;
-                }
             }
         }
     }
